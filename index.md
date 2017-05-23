@@ -35,6 +35,12 @@ Useful to know the distance of a run, cycle or other activity. Perhaps should al
 
 Whether the activity is "beginner", "intermediate", or "advanced". Perhaps there should be some discussion about the most generic categories that make sense here, and a way of using that, but also using a label specific to the activity. For example for martial arts you might have "blue belt and above, and "red belt and above" both as display labels, with the standard category of "intermediate" to allow searching across sports.
 
+### availability
+
+> [Discussion](https://github.com/openactive/ns-beta/issues/9)
+
+For data publishers not wishing to disclose the granular availability of their sessions openly, this property offers 3 options: `available`, `limited`, and `none`.
+
 
 ## Domain: [Offer](http://schema.org/Offer)
 
