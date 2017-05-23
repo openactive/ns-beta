@@ -3,7 +3,7 @@ This is a beta namespace for [OpenActive Vocabulary](https://www.openactive.io/n
 
 This allows us to add new properties to our endpoints so that we can publish all data fields we have that are useful, while providing a forum for discussion around each new property. The idea being that these properties would be considered by group for inclusion in the specification.
 
-We'll add the machine-readable JSON-LD behind this in time, this page serves as an interim-step.
+We'll add the machine-readable JSON-LD behind this in time, this page serves as an interim step.
 
 Note the issue associated with each one to facilitate discussion. To suggest a new property simply create a new issue [here](https://github.com/openactive/ns-beta/issues) (and if you're feeling techy optionally create a pull request to this file).
 
