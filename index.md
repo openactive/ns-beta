@@ -29,32 +29,11 @@ Sometimes a description is stored with formatting (e.g. href, bold, italics, emb
 
 Useful to know the distance of a run, cycle or other activity. Perhaps should also include the units.
 
-### offer
-
-> [Discussion](https://github.com/openactive/ns-beta/issues/4)
-
-Useful to have the price, name, and URL of specific offers (this is just pulled from schema.org)
-
 ### level
 
 > [Discussion](https://github.com/openactive/ns-beta/issues/6)
 
 Whether the activity is "beginner", "intermediate", or "advanced". Perhaps there should be some discussion about the most generic categories that make sense here, and a way of using that, but also using a label specific to the activity. For example for martial arts you might have "blue belt and above, and "red belt and above" both as display labels, with the standard category of "intermediate" to allow searching across sports.
-
-### imageCrop
-
-> [Discussion](https://github.com/openactive/ns-beta/issues/7)
-
-Array of https://schema.org/ImageObject - versions of the main image with different dimensions, useful for situations where photos are manually cropped by users to match. Width and height should be included for each.
-
-
-## Domain: [Organizer](http://schema.org/Organizer)  
-
-### logo
-
-> [Discussion](https://github.com/openactive/ns-beta/issues/8)
-
-https://schema.org/logo used within organizer - recommended PNG logo
 
 
 ## Domain: [Offer](http://schema.org/Offer)
