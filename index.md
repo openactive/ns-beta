@@ -1,5 +1,5 @@
 # Beta OpenActive Namespace Vocabulary Terms
-Beta namespace for OpenActive Vocabulary defined in the Modelling Opportunity Data Specification
+This is a beta namespace for [OpenActive Vocabulary](https://www.openactive.io/ns/) defined in the Modelling Opportunity Data Specification](https://www.openactive.io/modelling-opportunity-data/).
 
 This allows us to add new properties to our endpoints so that we can publish all data fields we have that are useful, while providing a forum for discussion around each new property. The idea being that these properties would be considered by group for inclusion in the specification.
 
