@@ -49,12 +49,3 @@ For data publishers not wishing to disclose the granular availability of their s
 > [Discussion](https://github.com/openactive/ns-beta/issues/5)
 
 For memberships, it is useful to know the frequency associated with the cost within an offer. E.g. "monthly" or "annual". This allows the data consumer to display and filter on memberships accordingly.
-
-## Domain: [Place](http://schema.org/Place)
-
-### meetingPoint
-
-> [Discussion](https://github.com/openactive/ns-beta/issues/10)
-
-A brief description of where to meet - especially useful for outdoor activities where the postcode and address is not sufficient.
-
