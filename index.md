@@ -50,6 +50,12 @@ For data publishers not wishing to disclose the granular availability of their s
 
 For memberships, it is useful to know the frequency associated with the cost within an offer. E.g. "monthly" or "annual". This allows the data consumer to display and filter on memberships accordingly.
 
+### ageRange
+
+> [Discussion](https://github.com/openactive/ns-beta/issues/11)
+
+For offers that are for a particular age group (e.g. "Junior non-member"), include an age range to which this applies. Same as oa:ageRange in the Event domain, just applied to Offer.
+
 
 ## Domain: [Place](http://schema.org/Place)
 
