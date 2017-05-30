@@ -41,6 +41,12 @@ Whether the activity is "beginner", "intermediate", or "advanced". Perhaps there
 
 For data publishers not wishing to disclose the granular availability of their sessions openly, this property offers 3 options: `available`, `limited`, and `none`.
 
+### attendeeCount
+
+> [Discussion](https://github.com/openactive/ns-beta/issues/12)
+
+For events that have an unlimited number of tickets, captures the number of attendees.
+
 
 ## Domain: [Offer](http://schema.org/Offer)
 
