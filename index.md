@@ -27,7 +27,7 @@ Sometimes a description is stored with formatting (e.g. href, bold, italics, emb
 
 > [Discussion](https://github.com/openactive/ns-beta/issues/3)
 
-Useful to know the distance of a run, cycle or other activity. Perhaps should also include the units.
+The distance of a run, cycle or other activity. Must also include units.
 
 ### level
 
