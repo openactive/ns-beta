@@ -45,8 +45,13 @@ For data publishers not wishing to disclose the granular availability of their s
 
 > [Discussion](https://github.com/openactive/ns-beta/issues/12)
 
-For events that have an unlimited number of tickets, captures the number of attendees.
+For events that have an unlimited number of tickets, captures the number of attendees (actual attendance).
 
+### registrationCount
+
+> [Discussion](https://github.com/openactive/ns-beta/issues/13)
+
+For events that have an unlimited number of tickets, captures the number of registrations (intention to attend)
 
 ## Domain: [Offer](http://schema.org/Offer)
 
