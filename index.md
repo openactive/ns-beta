@@ -75,3 +75,12 @@ For offers that are for a particular age group (e.g. "Junior non-member"), inclu
 > [Discussion](https://github.com/openactive/ns-beta/issues/10)
 
 A brief description of where to meet - especially useful for outdoor activities where the postcode and address is not sufficient.
+
+# Enumeration Members
+
+## Domain: [BusinessEntityType](http://schema.org/BusinessEntityType)
+
+### `http://www.openactive.io/ns-beta/Member`
+
+Indicates that a customer (eligableCustomerType) is a member of the business.
+
