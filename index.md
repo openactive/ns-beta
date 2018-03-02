@@ -11,6 +11,24 @@ Note the issue associated with each one to facilitate discussion. To suggest a n
 
 ## Domain: [Event](http://schema.org/Event) 
 
+### parking
+
+> [Discussion](https://github.com/openactive/ns-beta/issues/17)
+
+A property that details parking suitability. Placed on Event as this field could be used to detail parking options not directly at the location of the event.
+
+### equipment
+
+> [Discussion](https://github.com/openactive/ns-beta/issues/16)
+
+A Text property that allows an organiser to specify equipment requirements/recommendations for an event.
+
+### clothing
+
+> [Discussion](https://github.com/openactive/ns-beta/issues/15)
+
+A Text property that allows an organiser to specify clothing requirements/recommendations for an event.
+
 ### hasCoaching
 
 > [Discussion](https://github.com/openactive/ns-beta/issues/1)
