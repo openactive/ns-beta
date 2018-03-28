@@ -11,6 +11,18 @@ Note the issue associated with each one to facilitate discussion. To suggest a n
 
 ## Domain: [Event](http://schema.org/Event) 
 
+### specialRequirements
+
+> [Discussion](https://github.com/openactive/ns-beta/issues/20)
+
+A property that lists health conditions which the event caters for.
+
+### accessibilityWheelchairAccess
+
+> [Discussion](https://github.com/openactive/ns-beta/issues/21)
+
+A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.
+
 ### parking
 
 > [Discussion](https://github.com/openactive/ns-beta/issues/17)
