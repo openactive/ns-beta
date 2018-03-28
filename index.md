@@ -29,12 +29,6 @@ A property that details whether the event is suitable for wheelchair access. Pla
 
 A property that details parking suitability. Placed on Event as this field could be used to detail parking options not directly at the location of the event.
 
-### hasCoaching
-
-> [Discussion](https://github.com/openactive/ns-beta/issues/1)
-
-Whether a session is coached. Note that the coach name is not always specified, and this is different to having a "leader", as the leader may or may not be a coach.
-
 ### formattedDescription
 
 > [Discussion](https://github.com/openactive/ns-beta/issues/2)
@@ -46,12 +40,6 @@ Sometimes a description is stored with formatting (e.g. href, bold, italics, emb
 > [Discussion](https://github.com/openactive/ns-beta/issues/3)
 
 The distance of a run, cycle or other activity. Must also include units.
-
-### level
-
-> [Discussion](https://github.com/openactive/ns-beta/issues/6)
-
-Whether the activity is "beginner", "intermediate", or "advanced". Perhaps there should be some discussion about the most generic categories that make sense here, and a way of using that, but also using a label specific to the activity. For example for martial arts you might have "blue belt and above, and "red belt and above" both as display labels, with the standard category of "intermediate" to allow searching across sports.
 
 ### availability
 
