@@ -1,26 +1,24 @@
-Please fill in the below template
+If you are proposing a new addition to the OpenActive opportunity data model, then you MUST file an issue in this repository: https://github.com/openactive/modelling-opportunity-data
 
-## Proposer
-
-Which organisation(s) are proposing this issue?
-
-## Use Case
-
-Provide a short description of your use case. E.g. "as a potential participant, I want to know what equipment I should bring to an event"
-
-## Why is this not covered by existing properties?
-
-Please describe why your use case is not covered by the existing data model
-
-## Please provide a link to example data
-
-Please provide a link to a web page illustrating how this data is currently being published or used. If you are not currently collecting that data, then please indicate that.
+These issue is to record that you are testing out a proposed extension. Please fill in the below template.
 
 ## Proposal
 
-What property or properties are you proposing should be added to the data model? 
-Please provide a name and a definition for each. Please indicate what the values of the property might be,
+Please provide a link to the proposal in the opportunity data model repository
+https://github.com/openactive/modelling-opportunity-data
 
-## Example
+The proposal should list all of the new properties or other terms that you are planning to test.
 
-Optional. If possible, provide a snippet of data that illustrates how your proposed changes would be used.
+**If you are an implementer looking to provide feedback on the use of this term, then please follow the link to the proposal and leave comments there**
+
+## How are you testing?
+
+* What feedback do you want from implementers to help test this property? Provide details
+* In which data feed(s) will you be using the property?
+
+## Example Data
+
+Provide some examples of how you plan to use the property.
+
+
+
