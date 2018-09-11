@@ -5,7 +5,7 @@
     "schema": "http://schema.org/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "oa": "https://openactive.io/",
-    "beta": "https://openactive.co/ns-beta",
+    "beta": "https://openactive.co/ns-beta#",
     "id": "@id"
   },
   "beta:specialRequirements": {
