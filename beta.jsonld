@@ -20,8 +20,8 @@
     "description": "A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
     "@type": "xsd:boolean"
   },
-  "https://openactive.co/ns-beta#formattedDescription": {
-    "@id": "https://openactive.co/ns-beta#formattedDescription",
+  "https://openactive.io/ns-beta#formattedDescription": {
+    "@id": "https://openactive.io/ns-beta#formattedDescription",
     "@type": "rdf:Property",
     "rdfs:label": "Formatted Description",
     "rdfs:comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
