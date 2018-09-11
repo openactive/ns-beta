@@ -1,122 +1,64 @@
 {
   "@context": [
     "https://openactive.io/extension",
-    {
-      "beta": "https://openactive.io/ns-beta#"
-    }
+    { "beta": "https://openactive.io/ns-beta#" }
   ],
   "@graph": [
     {
-      "@id": "beta:specialRequirements",
+      "id": "beta:specialRequirements",
       "type": "Property",
       "label": "Special Requirements",
       "comment": "List of related special requirements from a controlled vocabulary.",
-      "domainIncludes": [
-        {
-          "@id": "schema:Event"
-        }
-      ],
-      "rangeIncludes": [
-        {
-          "@id": "skos:Concept"
-        }
-      ]
+      "domainIncludes": [ "schema:Event" ],
+      "rangeIncludes": [ "skos:Concept" ]
     },
     {
-      "@id": "beta:accessibilityWheelchairAccess",
+      "id": "beta:accessibilityWheelchairAccess",
       "type": "Property",
       "label": "Event is suitable for wheelchair access",
       "comment": "A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
-      "domainIncludes": [
-        {
-          "@id": "schema:Event"
-        }
-      ],
-      "rangeIncludes": [
-        {
-          "@id": "schema:Boolean"
-        }
-      ]
+      "domainIncludes": [ "schema:Event" ],
+      "rangeIncludes": [ "schema:Boolean" ]
     },
     {
-      "@id": "beta:formattedDescription",
+      "id": "beta:formattedDescription",
       "type": "Property",
       "label": "Formatted Description",
       "comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
-      "domainIncludes": [
-        {
-          "@id": "schema:Event"
-        }
-      ],
-      "rangeIncludes": [
-        {
-          "@id": "schema:Text"
-        }
-      ]
+      "domainIncludes": [ "schema:Event" ],
+      "rangeIncludes": [ "schema:Text" ]
     },
     {
-      "@id": "beta:distance",
+      "id": "beta:distance",
       "type": "Property",
       "label": "Distance",
       "comment": "The distance of a run, cycle or other activity. Must also include units.",
-      "domainIncludes": [
-        {
-          "@id": "schema:Event"
-        }
-      ],
-      "rangeIncludes": [
-        {
-          "@id": "schema:QuantitativeValue"
-        }
-      ]
+      "domainIncludes": [ "schema:Event" ],
+      "rangeIncludes": [ "schema:QuantitativeValue" ]
     },
     {
-      "@id": "beta:availability",
+      "id": "beta:availability",
       "type": "Property",
       "label": "Summary Availability",
       "comment": "For data publishers not wishing to disclose the granular availability of their sessions openly.",
-      "domainIncludes": [
-        {
-          "@id": "schema:Event"
-        }
-      ],
-      "rangeIncludes": [
-        {
-          "@id": "schema:Integer"
-        }
-      ]
+      "domainIncludes": [ "schema:Event" ],
+      "rangeIncludes": [ "schema:Integer" ]
     },
     {
-      "@id": "beta:attendeeCount",
+      "id": "beta:attendeeCount",
       "type": "Property",
       "label": "Attendee Count",
       "comment": "For events that have an unlimited number of tickets, captures the number of attendees (actual attendance).",
-      "domainIncludes": [
-        {
-          "@id": "schema:Event"
-        }
-      ],
-      "rangeIncludes": [
-        {
-          "@id": "schema:Integer"
-        }
-      ]
+      "domainIncludes": [ "schema:Event" ],
+      "rangeIncludes": [ "schema:Integer" ]
     },
     {
-      "@id": "beta:registrationCount",
+      "id": "beta:registrationCount",
       "type": "Property",
       "label": "Registration Count",
       "comment": "For events that have an unlimited number of tickets, captures the number of registrations (intention to attend).",
-      "domainIncludes": [
-        {
-          "@id": "schema:Event"
-        }
-      ],
-      "rangeIncludes": [
-        {
-          "@id": "schema:Integer"
-        }
-      ]
+      "domainIncludes": [ "schema:Event" ],
+      "rangeIncludes": [ "schema:Integer" ]
     }
   ]
 }
