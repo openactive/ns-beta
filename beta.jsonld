@@ -21,10 +21,16 @@
     "@type": "xsd:boolean"
   },
   "beta:formattedDescription": {
-    "id": "beta:formattedDescription",
-    "label": "Formatted Description",
-    "description": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
-    "@type": "xsd:string"
+    "@id": "beta:formattedDescription",
+    "@type": "rdf:Property",
+    "rdfs:label": "Formatted Description",
+    "rdfs:comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
+    "http://schema.org/domainIncludes": {
+      "@id": "http://schema.org/Event"
+    },
+    "http://schema.org/rangeIncludes": {
+      "@id": "http://schema.org/Text"
+    }
   },
   "beta:distance": {
     "id": "beta:distance",
