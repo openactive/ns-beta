@@ -1,59 +1,122 @@
 {
-  "@context": {
-    "label": "http://www.w3.org/2000/01/rdf-schema#label",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "schema": "http://schema.org/",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "oa": "https://openactive.io/",
-    "beta": "https://openactive.io/ns-beta#",
-    "id": "@id"
-  },
-  "beta:specialRequirements": {
-    "id": "imin:specialRequirements",
-    "label": "Special Requirements",
-    "description": "List of related special requirements from a controlled vocabulary.",
-    "@type": "skos:Concept"
-  },
-  "beta:accessibilityWheelchairAccess": {
-    "id": "beta:accessibilityWheelchairAccess",
-    "label": "Event is suitable for wheelchair access",
-    "description": "A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
-    "@type": "xsd:boolean"
-  },
-  "https://openactive.io/ns-beta#formattedDescription": {
-    "@id": "https://openactive.io/ns-beta#formattedDescription",
-    "@type": "rdf:Property",
-    "rdfs:label": "Formatted Description",
-    "rdfs:comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
-    "http://schema.org/domainIncludes": {
-      "@id": "http://schema.org/Event"
-    },
-    "http://schema.org/rangeIncludes": {
-      "@id": "http://schema.org/Text"
+  "@context": [
+    "https://openactive.io/extension",
+    {
+      "beta": "https://openactive.io/ns-beta#"
     }
-  },
-  "beta:distance": {
-    "id": "beta:distance",
-    "label": "Distance",
-    "description": "The distance of a run, cycle or other activity. Must also include units.",
-    "@type": "schema:QuantitativeValue"
-  },
-  "beta:availability": {
-    "id": "beta:availability",
-    "label": "Summary Availability",
-    "description": "For data publishers not wishing to disclose the granular availability of their sessions openly",
-    "@type": "xsd:string"
-  },
-  "beta:attendeeCount": {
-    "id": "beta:attendeeCount",
-    "label": "Attendee Count",
-    "description": "For events that have an unlimited number of tickets, captures the number of attendees (actual attendance).",
-    "@type": "xsd:integer"
-  },
-  "beta:registrationCount": {
-    "id": "beta:registrationCount",
-    "label": "Registration Count",
-    "description": "For events that have an unlimited number of tickets, captures the number of registrations (intention to attend)",
-    "@type": "xsd:integer"
-  }
+  ],
+  "@graph": [
+    {
+      "@id": "beta:specialRequirements",
+      "type": "Property",
+      "label": "Special Requirements",
+      "comment": "List of related special requirements from a controlled vocabulary.",
+      "domainIncludes": [
+        {
+          "@id": "schema:Event"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "skos:Concept"
+        }
+      ]
+    },
+    {
+      "@id": "beta:accessibilityWheelchairAccess",
+      "type": "Property",
+      "label": "Event is suitable for wheelchair access",
+      "comment": "A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
+      "domainIncludes": [
+        {
+          "@id": "schema:Event"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "schema:Boolean"
+        }
+      ]
+    },
+    {
+      "@id": "beta:formattedDescription",
+      "type": "Property",
+      "label": "Formatted Description",
+      "comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
+      "domainIncludes": [
+        {
+          "@id": "schema:Event"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        }
+      ]
+    },
+    {
+      "@id": "beta:distance",
+      "type": "Property",
+      "label": "Distance",
+      "comment": "The distance of a run, cycle or other activity. Must also include units.",
+      "domainIncludes": [
+        {
+          "@id": "schema:Event"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "schema:QuantitativeValue"
+        }
+      ]
+    },
+    {
+      "@id": "beta:availability",
+      "type": "Property",
+      "label": "Summary Availability",
+      "comment": "For data publishers not wishing to disclose the granular availability of their sessions openly.",
+      "domainIncludes": [
+        {
+          "@id": "schema:Event"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "schema:Integer"
+        }
+      ]
+    },
+    {
+      "@id": "beta:attendeeCount",
+      "type": "Property",
+      "label": "Attendee Count",
+      "comment": "For events that have an unlimited number of tickets, captures the number of attendees (actual attendance).",
+      "domainIncludes": [
+        {
+          "@id": "schema:Event"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "schema:Integer"
+        }
+      ]
+    },
+    {
+      "@id": "beta:registrationCount",
+      "type": "Property",
+      "label": "Registration Count",
+      "comment": "For events that have an unlimited number of tickets, captures the number of registrations (intention to attend).",
+      "domainIncludes": [
+        {
+          "@id": "schema:Event"
+        }
+      ],
+      "rangeIncludes": [
+        {
+          "@id": "schema:Integer"
+        }
+      ]
+    }
+  ]
 }
