@@ -7,7 +7,7 @@
     {
       "id": "beta:specialRequirements",
       "type": "Property",
-      "label": "Special Requirements",
+      "label": "specialRequirements",
       "comment": "List of related special requirements from a controlled vocabulary.",
       "domainIncludes": [ "schema:Event" ],
       "rangeIncludes": [ "skos:Concept" ]
@@ -15,7 +15,7 @@
     {
       "id": "beta:accessibilityWheelchairAccess",
       "type": "Property",
-      "label": "Event is suitable for wheelchair access",
+      "label": "accessibilityWheelchairAccess",
       "comment": "A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
       "domainIncludes": [ "schema:Event" ],
       "rangeIncludes": [ "schema:Boolean" ]
@@ -23,7 +23,7 @@
     {
       "id": "beta:formattedDescription",
       "type": "Property",
-      "label": "Formatted Description",
+      "label": "formattedDescription",
       "comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
       "domainIncludes": [ "schema:Event" ],
       "rangeIncludes": [ "schema:Text" ]
@@ -31,7 +31,7 @@
     {
       "id": "beta:distance",
       "type": "Property",
-      "label": "Distance",
+      "label": "distance",
       "comment": "The distance of a run, cycle or other activity. Must also include units.",
       "domainIncludes": [ "schema:Event" ],
       "rangeIncludes": [ "schema:QuantitativeValue" ]
@@ -39,7 +39,7 @@
     {
       "id": "beta:availability",
       "type": "Property",
-      "label": "Summary Availability",
+      "label": "availability",
       "comment": "For data publishers not wishing to disclose the granular availability of their sessions openly.",
       "domainIncludes": [ "schema:Event" ],
       "rangeIncludes": [ "schema:Integer" ]
@@ -47,7 +47,7 @@
     {
       "id": "beta:attendeeCount",
       "type": "Property",
-      "label": "Attendee Count",
+      "label": "attendeeCount",
       "comment": "For events that have an unlimited number of tickets, captures the number of attendees (actual attendance).",
       "domainIncludes": [ "schema:Event" ],
       "rangeIncludes": [ "schema:Integer" ]
@@ -55,10 +55,26 @@
     {
       "id": "beta:registrationCount",
       "type": "Property",
-      "label": "Registration Count",
+      "label": "registrationCount",
       "comment": "For events that have an unlimited number of tickets, captures the number of registrations (intention to attend).",
       "domainIncludes": [ "schema:Event" ],
       "rangeIncludes": [ "schema:Integer" ]
+    },
+    {
+      "id": "beta:course",
+      "type": "Property",
+      "label": "course",
+      "comment": "This course for which this is an offering.",
+      "domainIncludes": [ "schema:CourseInstance" ],
+      "rangeIncludes": [ "schema:Course" ]
+    },
+    {
+      "id": "beta:logo",
+      "type": "Property",
+      "label": "logo",
+      "comment": "An associated logo for a course.",
+      "domainIncludes": [ "schema:Course" ],
+      "rangeIncludes": [ "schema:ImageObject" ]
     }
   ]
 }
