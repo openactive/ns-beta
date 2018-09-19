@@ -77,7 +77,7 @@
       "rangeIncludes": [ "schema:ImageObject" ]
     },
     {
-      "id": "https://openactive.io/ns-beta#BusinessEntityType",
+      "id": "https://openactive.io/ns-beta#Member",
       "type": "schema:BusinessEntityType",
       "label": "Member",
       "comment": "Indicates that a customer (eligableCustomerType) is a member of the business."
