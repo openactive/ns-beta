@@ -39,8 +39,8 @@ Note the issue associated with each one to facilitate discussion. To suggest a n
 
 ## Extension Properties
 
-| (Class) Property    |  Expected Type  | Issue Ref   | Description                                                         |
-|---------------------|-----------------|-------------|---------------------------------------------------------------------|
+| (Class) Property    |  Expected Type  | Proposal   | Description                                                         |
+|---------------------|-----------------|------------|---------------------------------------------------------------------|
 | (`schema:Course`) <br/> `beta:logo` | `schema:ImageObject` | [#164](https://github.com/openactive/modelling-opportunity-data/issues/164) | An associated logo for a course. |
 | (`schema:CourseInstance`) <br/> `beta:course` | `schema:Course` | [#164](https://github.com/openactive/modelling-opportunity-data/issues/164) | This course for which this is an offering. |
 | (`schema:Event`) <br/> `beta:accessibilityWheelchairAccess` | `schema:Boolean` | [#21](https://github.com/openactive/ns-beta/issues/21) | A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place. |
@@ -55,7 +55,7 @@ Note the issue associated with each one to facilitate discussion. To suggest a n
 
 ## Enumeration Values
 
-| Type          | Value    | Issue Ref   | Description                                                                    |
+| Type          | Value    | Proposal    | Description                                                                    |
 |---------------|----------|-------------|--------------------------------------------------------------------------------|
 | `schema:BusinessEntityType` | `https://openactive.io/ns-beta#Member` | [#80](https://github.com/openactive/modelling-opportunity-data/issues/80) | Indicates that a customer (eligableCustomerType) is a member of the business. |
 
