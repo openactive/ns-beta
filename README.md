@@ -35,7 +35,7 @@ Note the issue associated with each one to facilitate discussion. To suggest a n
 }
 ```
 
-# Properties
+# Namespace
 
 ## Extension Properties
 
