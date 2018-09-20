@@ -1,7 +1,7 @@
 # Beta OpenActive Namespace Vocabulary Terms
-This is a beta namespace for [OpenActive Vocabulary](https://www.openactive.io/ns/) defined in the [Modelling Opportunity Data Specification](https://www.openactive.io/modelling-opportunity-data/).
+This is the beta namespace for the [OpenActive Vocabulary](https://www.openactive.io/ns/), as defined in the [Modelling Opportunity Data Specification](https://www.openactive.io/modelling-opportunity-data/).
 
-This is custom namespace that can be used by publishers experimenting with new properties that are likely to be added to the core specification.
+This namespace can be used by publishers experimenting with new properties that are likely to be added to the core specification.
 
 It is defined as a convenience to help document properties that are in active testing and review by the community. Publishers should not assume that properties in the beta namespace will either be added to the core specification or be included in the namespace over the long term.
 
