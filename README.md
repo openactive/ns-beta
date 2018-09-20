@@ -59,5 +59,5 @@ Note that properties listed here _must_ have associated proposals in one of the 
 
 | Type          | Value    | Proposal    | Description                                                                    |
 |---------------|----------|-------------|--------------------------------------------------------------------------------|
-| `[`schema:BusinessEntityType`](https://schema.org/BusinessEntityType)` | `https://openactive.io/ns-beta#Member` | [#80](https://github.com/openactive/modelling-opportunity-data/issues/80) | Indicates that a customer (eligableCustomerType) is a member of the business. |
+| [`schema:BusinessEntityType`](https://schema.org/BusinessEntityType) | `https://openactive.io/ns-beta#Member` | [#80](https://github.com/openactive/modelling-opportunity-data/issues/80) | Indicates that a customer (eligableCustomerType) is a member of the business. |
 
