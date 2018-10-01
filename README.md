@@ -50,11 +50,26 @@ Note that properties listed here _must_ have associated proposals in one of the 
 | ([`schema:Event`](https://schema.org/Event)) <br/> `beta:distance` | [`schema:QuantitativeValue`](https://schema.org/QuantitativeValue) | [#3](https://github.com/openactive/ns-beta/issues/3) | The distance of a run, cycle or other activity. Must also include units. |
 | ([`schema:Event`](https://schema.org/Event)) <br/> `beta:formattedDescription` | [`schema:Text`](https://schema.org/Text) | [#2](https://github.com/openactive/ns-beta/issues/2) | Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers. |
 | ([`schema:Event`](https://schema.org/Event)) <br/> `beta:registrationCount` | [`schema:Integer`](https://schema.org/Integer) | [#13](https://github.com/openactive/ns-beta/issues/13) | For events that have an unlimited number of tickets, captures the number of registrations (intention to attend). |
+| ([`schema:Offer`](https://schema.org/Offer)) <br/> `beta:availableChannel` | [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | The channels through which a booking can be made. |
+
+
+
+## Classes
+
+| Class                      | subClass | Proposal    | Description                                                                                 |
+|----------------------------|----------|-------------|---------------------------------------------------------------------------------------------|
+| `beta:AvailableChannelType` | [`schema:Enumeration`](https://schema.org/Enumeration) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | An enumeration of channels through which a booking can be made. |
+
 
 
 ## Enumeration Values
 
 | Type          | Value    | Proposal    | Description                                                                    |
 |---------------|----------|-------------|--------------------------------------------------------------------------------|
+| [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | `https://openactive.io/ns-beta#OnlinePrepayment` | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made and paid for online. |
+| [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | `https://openactive.io/ns-beta#TelephoneAdvanceBooking` | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made but not paid for in advance by telephone. |
+| [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | `https://openactive.io/ns-beta#TelephonePrepayment` | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made and paid for in advance by telephone. |
 | [`schema:BusinessEntityType`](https://schema.org/BusinessEntityType) | `https://openactive.io/ns-beta#Member` | [#80](https://github.com/openactive/modelling-opportunity-data/issues/80) | Indicates that a customer (eligableCustomerType) is a member of the business. |
+
+
 
