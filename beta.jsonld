@@ -1,7 +1,9 @@
 {
   "@context": [
     "https://openactive.io/extension",
-    { "beta": "https://openactive.io/ns-beta#" }
+    {
+      "beta": "https://openactive.io/ns-beta#"
+    }
   ],
   "@graph": [
     {
@@ -9,8 +11,12 @@
       "type": "Property",
       "label": "formattedDescription",
       "comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
-      "domainIncludes": [ "schema:Event" ],
-      "rangeIncludes": [ "schema:Text" ],
+      "domainIncludes": [
+        "schema:Event"
+      ],
+      "rangeIncludes": [
+        "schema:Text"
+      ],
       "githubIssue": "https://github.com/openactive/ns-beta/issues/2"
     },
     {
@@ -18,8 +24,12 @@
       "type": "Property",
       "label": "distance",
       "comment": "The distance of a run, cycle or other activity. Must also include units.",
-      "domainIncludes": [ "schema:Event" ],
-      "rangeIncludes": [ "schema:QuantitativeValue" ],
+      "domainIncludes": [
+        "schema:Event"
+      ],
+      "rangeIncludes": [
+        "schema:QuantitativeValue"
+      ],
       "githubIssue": "https://github.com/openactive/ns-beta/issues/3"
     },
     {
@@ -27,8 +37,12 @@
       "type": "Property",
       "label": "availability",
       "comment": "For data publishers not wishing to disclose the granular availability of their sessions openly.",
-      "domainIncludes": [ "schema:Event" ],
-      "rangeIncludes": [ "schema:Text" ],
+      "domainIncludes": [
+        "schema:Event"
+      ],
+      "rangeIncludes": [
+        "schema:Text"
+      ],
       "githubIssue": "https://github.com/openactive/ns-beta/issues/9"
     },
     {
@@ -36,8 +50,12 @@
       "type": "Property",
       "label": "attendeeCount",
       "comment": "For events that have an unlimited number of tickets, captures the number of attendees (actual attendance).",
-      "domainIncludes": [ "schema:Event" ],
-      "rangeIncludes": [ "schema:Integer" ],
+      "domainIncludes": [
+        "schema:Event"
+      ],
+      "rangeIncludes": [
+        "schema:Integer"
+      ],
       "githubIssue": "https://github.com/openactive/ns-beta/issues/12"
     },
     {
@@ -45,8 +63,12 @@
       "type": "Property",
       "label": "registrationCount",
       "comment": "For events that have an unlimited number of tickets, captures the number of registrations (intention to attend).",
-      "domainIncludes": [ "schema:Event" ],
-      "rangeIncludes": [ "schema:Integer" ],
+      "domainIncludes": [
+        "schema:Event"
+      ],
+      "rangeIncludes": [
+        "schema:Integer"
+      ],
       "githubIssue": "https://github.com/openactive/ns-beta/issues/13"
     },
     {
@@ -54,8 +76,12 @@
       "type": "Property",
       "label": "course",
       "comment": "This course for which this is an offering.",
-      "domainIncludes": [ "schema:CourseInstance" ],
-      "rangeIncludes": [ "schema:Course" ],
+      "domainIncludes": [
+        "schema:CourseInstance"
+      ],
+      "rangeIncludes": [
+        "schema:Course"
+      ],
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/164"
     },
     {
@@ -63,8 +89,12 @@
       "type": "Property",
       "label": "logo",
       "comment": "An associated logo for a course.",
-      "domainIncludes": [ "schema:Course" ],
-      "rangeIncludes": [ "schema:ImageObject" ],
+      "domainIncludes": [
+        "schema:Course"
+      ],
+      "rangeIncludes": [
+        "schema:ImageObject"
+      ],
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/164"
     },
     {
@@ -73,6 +103,50 @@
       "label": "Member",
       "comment": "Indicates that a customer (eligableCustomerType) is a member of the business.",
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/80"
+    },
+    {
+      "id": "beta:availableChannel",
+      "type": "Property",
+      "label": "availableChannel",
+      "comment": "The channels through which a booking can be made.",
+      "domainIncludes": [
+        "schema:Offer"
+      ],
+      "rangeIncludes": [
+        "beta:AvailableChannelType"
+      ],
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "id": "beta:AvailableChannelType",
+      "type": "Class",
+      "label": "AvailableChannelType",
+      "comment": "An enumeration of channels through which a booking can be made.",
+      "subClassOf": [
+        "schema:Enumeration"
+      ],
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "id": "https://openactive.io/ns-beta#TelephoneAdvanceBooking",
+      "type": "beta:AvailableChannelType",
+      "label": "TelephoneAdvanceBooking",
+      "comment": "Bookings can be made but not paid for in advance by telephone.",
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "id": "https://openactive.io/ns-beta#TelephonePrepayment",
+      "type": "beta:AvailableChannelType",
+      "label": "TelephonePrepayment",
+      "comment": "Bookings can be made and paid for in advance by telephone.",
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "id": "https://openactive.io/ns-beta#OnlinePrepayment",
+      "type": "beta:AvailableChannelType",
+      "label": "OnlinePrepayment",
+      "comment": "Bookings can be made and paid for online.",
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
     }
   ]
 }
