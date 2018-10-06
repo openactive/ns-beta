@@ -147,6 +147,20 @@
       "label": "OnlinePrepayment",
       "comment": "Bookings can be made and paid for online.",
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "id": "beta:sportsActivityLocation",
+      "type": "Property",
+      "label": "sportsActivityLocation",
+      "comment": "The specific array of SportsActivityLocation related to the FacilityUse, usually within the location.",
+      "domainIncludes": [
+        "schema:FacilityUse",
+        "schema:IndividualFacilityUse"
+      ],
+      "rangeIncludes": [
+        "schema:SportsActivityLocation"
+      ],
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/110"
     }
   ]
 }
