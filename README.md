@@ -43,6 +43,7 @@ Note that properties listed here _must_ have associated proposals in one of the 
 
 | (Class) Property    |  Expected Type  | Proposal   | Description                                                         |
 |---------------------|-----------------|------------|---------------------------------------------------------------------|
+| ([`oa:FacilityUse`](https://openactive.io/FacilityUse), [`oa:IndividualFacilityUse`](https://openactive.io/IndividualFacilityUse)) <br/> `beta:sportsActivityLocation` | [`schema:SportsActivityLocation`](https://schema.org/SportsActivityLocation) | [#110](https://github.com/openactive/modelling-opportunity-data/issues/110) | The specific array of SportsActivityLocation related to the FacilityUse, usually within the location. |
 | ([`schema:Course`](https://schema.org/Course)) <br/> `beta:logo` | [`schema:ImageObject`](https://schema.org/ImageObject) | [#164](https://github.com/openactive/modelling-opportunity-data/issues/164) | An associated logo for a course. |
 | ([`schema:CourseInstance`](https://schema.org/CourseInstance)) <br/> `beta:course` | [`schema:Course`](https://schema.org/Course) | [#164](https://github.com/openactive/modelling-opportunity-data/issues/164) | This course for which this is an offering. |
 | ([`schema:Event`](https://schema.org/Event)) <br/> `beta:attendeeCount` | [`schema:Integer`](https://schema.org/Integer) | [#12](https://github.com/openactive/ns-beta/issues/12) | For events that have an unlimited number of tickets, captures the number of attendees (actual attendance). |
@@ -56,20 +57,17 @@ Note that properties listed here _must_ have associated proposals in one of the 
 
 ## Classes
 
-| Class                      | subClass | Proposal    | Description                                                                                 |
-|----------------------------|----------|-------------|---------------------------------------------------------------------------------------------|
+| Class                      | subClass | Proposal   | Description                                                                                 |
+|----------------------------|----------|------------|---------------------------------------------------------------------------------------------|
 | `beta:AvailableChannelType` | [`schema:Enumeration`](https://schema.org/Enumeration) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | An enumeration of channels through which a booking can be made. |
 
 
 
 ## Enumeration Values
 
-| Type          | Value    | Proposal    | Description                                                                    |
-|---------------|----------|-------------|--------------------------------------------------------------------------------|
+| Type          | Value    | Proposal   | Description                                                                    |
+|---------------|----------|------------|--------------------------------------------------------------------------------|
 | [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | `https://openactive.io/ns-beta#OnlinePrepayment` | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made and paid for online. |
 | [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | `https://openactive.io/ns-beta#TelephoneAdvanceBooking` | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made but not paid for in advance by telephone. |
 | [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | `https://openactive.io/ns-beta#TelephonePrepayment` | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made and paid for in advance by telephone. |
 | [`schema:BusinessEntityType`](https://schema.org/BusinessEntityType) | `https://openactive.io/ns-beta#Member` | [#80](https://github.com/openactive/modelling-opportunity-data/issues/80) | Indicates that a customer (eligableCustomerType) is a member of the business. |
-
-
-
