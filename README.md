@@ -40,6 +40,7 @@ Note that properties listed here _must_ have associated proposals in one of the 
 # Namespace
 
 
+
 ## Properties
 
 | (Class) Property    |  Expected Type  | Proposal   | Description                                                         |
@@ -68,9 +69,8 @@ Note that properties listed here _must_ have associated proposals in one of the 
 
 | Type          | Value    | Proposal   | Description                                                                    |
 |---------------|----------|------------|--------------------------------------------------------------------------------|
-| [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | <a name="ns-beta#OnlinePrepayment"></a> [`https://openactive.io/ns-beta#OnlinePrepayment`](#ns-beta#OnlinePrepayment) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made and paid for online. |
-| [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | <a name="ns-beta#TelephoneAdvanceBooking"></a> [`https://openactive.io/ns-beta#TelephoneAdvanceBooking`](#ns-beta#TelephoneAdvanceBooking) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made but not paid for in advance by telephone. |
-| [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | <a name="ns-beta#TelephonePrepayment"></a> [`https://openactive.io/ns-beta#TelephonePrepayment`](#ns-beta#TelephonePrepayment) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made and paid for in advance by telephone. |
-| [`schema:BusinessEntityType`](https://schema.org/BusinessEntityType) | <a name="ns-beta#Member"></a> [`https://openactive.io/ns-beta#Member`](#ns-beta#Member) | [#80](https://github.com/openactive/modelling-opportunity-data/issues/80) | Indicates that a customer (eligableCustomerType) is a member of the business. |
-
+| [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | <a name="OnlinePrepayment"></a> [`https://openactive.io/ns-beta#OnlinePrepayment`](#OnlinePrepayment) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made and paid for online. |
+| [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | <a name="TelephoneAdvanceBooking"></a> [`https://openactive.io/ns-beta#TelephoneAdvanceBooking`](#TelephoneAdvanceBooking) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made but not paid for in advance by telephone. |
+| [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | <a name="TelephonePrepayment"></a> [`https://openactive.io/ns-beta#TelephonePrepayment`](#TelephonePrepayment) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made and paid for in advance by telephone. |
+| [`schema:BusinessEntityType`](https://schema.org/BusinessEntityType) | <a name="Member"></a> [`https://openactive.io/ns-beta#Member`](#Member) | [#80](https://github.com/openactive/modelling-opportunity-data/issues/80) | Indicates that a customer (eligableCustomerType) is a member of the business. |
 
