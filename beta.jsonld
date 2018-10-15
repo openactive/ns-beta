@@ -161,6 +161,15 @@
         "schema:SportsActivityLocation"
       ],
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/110"
+    },
+    {
+      "id": "beta:isWheelchairAccessible",
+      "type": "Property",
+      "label": "isWheelchairAccessible",
+      "comment": "A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
+      "domainIncludes": [ "schema:Event" ],
+      "rangeIncludes": [ "schema:Boolean" ],
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/166"
     }
   ]
 }
