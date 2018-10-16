@@ -165,7 +165,8 @@
         "oa:FacilityUse"
       ],
       "rangeIncludes": [
-        "schema:SportsActivityLocation"
+        "schema:SportsActivityLocation",
+        "oa:FacilityUse"
       ],
       "isArray": true,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/110"
