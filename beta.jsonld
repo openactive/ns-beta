@@ -17,6 +17,7 @@
       "rangeIncludes": [
         "schema:Text"
       ],
+      "isArray": false,
       "githubIssue": "https://github.com/openactive/ns-beta/issues/2"
     },
     {
@@ -30,6 +31,7 @@
       "rangeIncludes": [
         "schema:QuantitativeValue"
       ],
+      "isArray": false,
       "githubIssue": "https://github.com/openactive/ns-beta/issues/3"
     },
     {
@@ -43,6 +45,7 @@
       "rangeIncludes": [
         "schema:Text"
       ],
+      "isArray": false,
       "githubIssue": "https://github.com/openactive/ns-beta/issues/9"
     },
     {
@@ -56,6 +59,7 @@
       "rangeIncludes": [
         "schema:Integer"
       ],
+      "isArray": false,
       "githubIssue": "https://github.com/openactive/ns-beta/issues/12"
     },
     {
@@ -69,6 +73,7 @@
       "rangeIncludes": [
         "schema:Integer"
       ],
+      "isArray": false,
       "githubIssue": "https://github.com/openactive/ns-beta/issues/13"
     },
     {
@@ -82,6 +87,7 @@
       "rangeIncludes": [
         "schema:Course"
       ],
+      "isArray": false,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/164"
     },
     {
@@ -95,6 +101,7 @@
       "rangeIncludes": [
         "schema:ImageObject"
       ],
+      "isArray": false,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/164"
     },
     {
@@ -115,6 +122,7 @@
       "rangeIncludes": [
         "beta:AvailableChannelType"
       ],
+      "isArray": true,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
     },
     {
@@ -160,6 +168,7 @@
       "rangeIncludes": [
         "schema:SportsActivityLocation"
       ],
+      "isArray": true,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/110"
     },
     {
@@ -169,6 +178,7 @@
       "comment": "A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
       "domainIncludes": [ "schema:Event" ],
       "rangeIncludes": [ "schema:Boolean" ],
+      "isArray": false,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/166"
     }
   ]
