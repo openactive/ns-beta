@@ -162,8 +162,7 @@
       "label": "sportsActivityLocation",
       "comment": "The specific array of SportsActivityLocation related to the FacilityUse, usually within the location.",
       "domainIncludes": [
-        "oa:FacilityUse",
-        "oa:IndividualFacilityUse"
+        "oa:FacilityUse"
       ],
       "rangeIncludes": [
         "schema:SportsActivityLocation"
