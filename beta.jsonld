@@ -157,6 +157,13 @@
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
     },
     {
+      "id": "https://openactive.io/ns-beta#OpenBookingPrepayment",
+      "type": "beta:AvailableChannelType",
+      "label": "OpenBookingPrepayment",
+      "comment": "Bookings can be made via the Open Booking API.",
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
       "id": "beta:sportsActivityLocation",
       "type": "Property",
       "label": "sportsActivityLocation",
