@@ -186,6 +186,16 @@
       "rangeIncludes": [ "schema:Boolean" ],
       "isArray": false,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/166"
+    },
+    {
+      "id": "beta:estimatedDuration",
+      "type": "Property",
+      "label": "estimatedDuration",
+      "comment": "A property that allows an Event duration to be represented as a range (e.g. 0-30mins, 30-60mins, 60-90mins, 90+).",
+      "domainIncludes": [ "schema:Event" ],
+      "rangeIncludes": [ "schema:QuantitativeValue" ],
+      "isArray": false,
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/201"
     }
   ]
 }
