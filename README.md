@@ -63,6 +63,7 @@ Note that properties listed here _must_ have associated proposals in one of the 
 | Class                      | subClass | Proposal   | Description                                                                                 |
 |----------------------------|----------|------------|---------------------------------------------------------------------------------------------|
 | <a name="AvailableChannelType"></a> `beta:AvailableChannelType` | [`schema:Enumeration`](https://schema.org/Enumeration) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | An enumeration of channels through which a booking can be made. |
+| <a name="ConceptCollection"></a> `beta:ConceptCollection` | [`skos:Collection`](http://www.w3.org/2004/02/skos/core#Collection), [`schema:CreativeWork`](https://schema.org/CreativeWork) | [#203](https://github.com/openactive/modelling-opportunity-data/issues/203) | A SKOS Collection for use with SKOS ConceptScheme |
 
 
 
@@ -75,3 +76,4 @@ Note that properties listed here _must_ have associated proposals in one of the 
 | [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | <a name="TelephoneAdvanceBooking"></a> `https://openactive.io/ns-beta#TelephoneAdvanceBooking` | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made but not paid for in advance by telephone. |
 | [`beta:AvailableChannelType`](https://openactive.io/ns-beta#AvailableChannelType) | <a name="TelephonePrepayment"></a> `https://openactive.io/ns-beta#TelephonePrepayment` | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | Bookings can be made and paid for in advance by telephone. |
 | [`schema:BusinessEntityType`](https://schema.org/BusinessEntityType) | <a name="Member"></a> `https://openactive.io/ns-beta#Member` | [#80](https://github.com/openactive/modelling-opportunity-data/issues/80) | Indicates that a customer (eligableCustomerType) is a member of the business. |
+
