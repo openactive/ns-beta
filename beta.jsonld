@@ -196,6 +196,17 @@
       "rangeIncludes": [ "schema:QuantitativeValue" ],
       "isArray": false,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/201"
+    },
+    {
+      "id": "beta:ConceptCollection",
+      "type": "Class",
+      "label": "ConceptCollection",
+      "comment": "A SKOS Collection for use with SKOS ConceptScheme",
+      "subClassOf": [
+        "skos:Collection",
+        "schema:CreativeWork"
+      ],
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/203"
     }
   ]
 }
