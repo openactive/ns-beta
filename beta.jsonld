@@ -223,7 +223,7 @@
       "type": "Property",
       "label": "video",
       "comment": "An related video object.",
-      "domainIncludes": [ "schema:Event", "openactive:FacilityUse", "schema:Brand"  ],
+      "domainIncludes": [ "schema:Event", "oa:FacilityUse", "schema:Brand"  ],
       "rangeIncludes": [ "schema:VideoObject" ],
       "isArray": true,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/88"
