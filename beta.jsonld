@@ -207,6 +207,16 @@
         "schema:CreativeWork"
       ],
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/203"
+    },
+    {
+      "id": "beta:timeZone",
+      "type": "Property",
+      "label": "timeZone",
+      "comment": "The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
+      "domainIncludes": [ "pending:Schedule" ],
+      "rangeIncludes": [ "schema:Text" ],
+      "isArray": false,
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/197"
     }
   ]
 }
