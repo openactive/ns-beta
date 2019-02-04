@@ -227,6 +227,26 @@
       "rangeIncludes": [ "schema:VideoObject" ],
       "isArray": true,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/88"
+    },
+    {
+      "id": "beta:sportsActivityLocation",
+      "type": "Property",
+      "label": "sportsActivityLocation",
+      "comment": "Internal location of the event, e.g. Court 1",
+      "domainIncludes": [ "schema:Event"  ],
+      "rangeIncludes": [ "schema:SportsActivityLocation" ],
+      "isArray": true,
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/110"
+    },
+    {
+      "id": "beta:offerValidityPeriod",
+      "type": "Property",
+      "label": "offerValidityPeriod",
+      "comment": "Duration before the event for which the associated Offers are valid",
+      "domainIncludes": [ "schema:Event", "oa:FacilityUse" ],
+      "rangeIncludes": [ "schema:Duration" ],
+      "isArray": false,
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/204"
     }
   ]
 }
