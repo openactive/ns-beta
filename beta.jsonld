@@ -13,7 +13,8 @@
       "comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
       "domainIncludes": [
         "schema:Event",
-        "schema:Place"
+        "schema:Place",
+        "schema:Organization"
       ],
       "rangeIncludes": [
         "schema:Text"
