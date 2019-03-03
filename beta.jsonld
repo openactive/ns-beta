@@ -12,7 +12,7 @@
       "label": "formattedDescription",
       "comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
       "domainIncludes": [
-        "schema:Event"
+        "schema:Thing"
       ],
       "rangeIncludes": [
         "schema:Text"
