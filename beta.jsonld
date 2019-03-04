@@ -286,14 +286,14 @@
       "id": "beta:facilitySetting",
       "type": "Property",
       "label": "facilityType",
-      "comment": "Whether the facility is indoor, outdoor, or is able to be either.",
+      "comment": "Whether the facility is indoor or outdoor.",
       "domainIncludes": [
         "oa:FacilityUse"
       ],
       "rangeIncludes": [
         "beta:FacilitySettingType"
       ],
-      "isArray": true,
+      "isArray": false,
       "githubIssue": "https://github.com/openactive/facility-types/issues/1"
     },
     {
