@@ -235,7 +235,7 @@
       "type": "Property",
       "label": "sportsActivityLocation",
       "comment": "Internal location of the event, e.g. Court 1",
-      "domainIncludes": [ "schema:Event"  ],
+      "domainIncludes": [ "schema:Event", "oa:Slot" ],
       "rangeIncludes": [ "schema:SportsActivityLocation" ],
       "isArray": true,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/110"
