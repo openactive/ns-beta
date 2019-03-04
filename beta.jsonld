@@ -14,7 +14,8 @@
       "domainIncludes": [
         "schema:Event",
         "schema:Place",
-        "schema:Organization"
+        "schema:Organization",
+        "oa:FacilityUse"
       ],
       "rangeIncludes": [
         "schema:Text"
@@ -184,7 +185,7 @@
       "type": "Property",
       "label": "isWheelchairAccessible",
       "comment": "A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
-      "domainIncludes": [ "schema:Event" ],
+      "domainIncludes": [ "schema:Event", "oa:FacilityUse" ],
       "rangeIncludes": [ "schema:Boolean" ],
       "isArray": false,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/166"
