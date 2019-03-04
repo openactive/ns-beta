@@ -66,7 +66,7 @@ Note that properties listed here _must_ have associated proposals in one of the 
 
 ## Classes
 
-| Class                      | subClass | Proposal   | Description                                                                                 |
+| Class                      | subClasses | Proposal   | Description                                                                                 |
 |----------------------------|----------|------------|---------------------------------------------------------------------------------------------|
 | <a name="AvailableChannelType"></a> `beta:AvailableChannelType` | [`schema:Enumeration`](https://schema.org/Enumeration) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | An enumeration of channels through which a booking can be made. |
 | <a name="FacilitySettingType"></a> `beta:FacilitySettingType` | [`schema:Enumeration`](https://schema.org/Enumeration) | [#1](https://github.com/openactive/facility-types/issues/1) | An enumeration of settings in which a facility can exist. |
