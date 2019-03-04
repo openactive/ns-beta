@@ -167,26 +167,17 @@
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
     },
     {
-      "id": "beta:sportsActivityLocation",
-      "type": "Property",
-      "label": "sportsActivityLocation",
-      "comment": "The specific array of SportsActivityLocation related to the FacilityUse, usually within the location.",
-      "domainIncludes": [
-        "oa:FacilityUse"
-      ],
-      "rangeIncludes": [
-        "schema:SportsActivityLocation"
-      ],
-      "isArray": true,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/110"
-    },
-    {
       "id": "beta:isWheelchairAccessible",
       "type": "Property",
       "label": "isWheelchairAccessible",
       "comment": "A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
-      "domainIncludes": [ "schema:Event", "oa:FacilityUse" ],
-      "rangeIncludes": [ "schema:Boolean" ],
+      "domainIncludes": [
+        "schema:Event",
+        "oa:FacilityUse"
+      ],
+      "rangeIncludes": [
+        "schema:Boolean"
+      ],
       "isArray": false,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/166"
     },
@@ -195,8 +186,12 @@
       "type": "Property",
       "label": "estimatedDuration",
       "comment": "A property that allows an Event duration to be represented as a range (e.g. 0-30mins, 30-60mins, 60-90mins, 90+).",
-      "domainIncludes": [ "schema:Event" ],
-      "rangeIncludes": [ "schema:QuantitativeValue" ],
+      "domainIncludes": [
+        "schema:Event"
+      ],
+      "rangeIncludes": [
+        "schema:QuantitativeValue"
+      ],
       "isArray": false,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/201"
     },
@@ -216,8 +211,12 @@
       "type": "Property",
       "label": "timeZone",
       "comment": "The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
-      "domainIncludes": [ "pending:Schedule" ],
-      "rangeIncludes": [ "schema:Text" ],
+      "domainIncludes": [
+        "pending:Schedule"
+      ],
+      "rangeIncludes": [
+        "schema:Text"
+      ],
       "isArray": false,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/197"
     },
@@ -226,8 +225,15 @@
       "type": "Property",
       "label": "video",
       "comment": "An related video object.",
-      "domainIncludes": [ "schema:Event", "oa:FacilityUse", "schema:Brand", "schema:Organization" ],
-      "rangeIncludes": [ "schema:VideoObject" ],
+      "domainIncludes": [
+        "schema:Event",
+        "oa:FacilityUse",
+        "schema:Brand",
+        "schema:Organization"
+      ],
+      "rangeIncludes": [
+        "schema:VideoObject"
+      ],
       "isArray": true,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/88"
     },
@@ -236,8 +242,14 @@
       "type": "Property",
       "label": "sportsActivityLocation",
       "comment": "Internal location of the event, e.g. Court 1",
-      "domainIncludes": [ "schema:Event", "oa:Slot" ],
-      "rangeIncludes": [ "schema:SportsActivityLocation" ],
+      "domainIncludes": [
+        "schema:Event",
+        "oa:Slot",
+        "oa:FacilityUse"
+      ],
+      "rangeIncludes": [
+        "schema:SportsActivityLocation"
+      ],
       "isArray": true,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/110"
     },
@@ -246,10 +258,67 @@
       "type": "Property",
       "label": "offerValidityPeriod",
       "comment": "Duration before the event for which the associated Offers are valid",
-      "domainIncludes": [ "schema:Event", "oa:FacilityUse" ],
-      "rangeIncludes": [ "schema:Duration" ],
+      "domainIncludes": [
+        "schema:Event",
+        "oa:FacilityUse"
+      ],
+      "rangeIncludes": [
+        "schema:Duration"
+      ],
       "isArray": false,
       "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/204"
+    },
+    {
+      "id": "beta:facilityType",
+      "type": "Property",
+      "label": "facilityType",
+      "comment": "The type of facility in use.",
+      "domainIncludes": [
+        "oa:FacilityUse"
+      ],
+      "rangeIncludes": [
+        "skos:Concept"
+      ],
+      "isArray": true,
+      "githubIssue": "https://github.com/openactive/facility-types/issues/1"
+    },
+    {
+      "id": "beta:facilitySetting",
+      "type": "Property",
+      "label": "facilityType",
+      "comment": "Whether the facility is indoor, outdoor, or is able to be either.",
+      "domainIncludes": [
+        "oa:FacilityUse"
+      ],
+      "rangeIncludes": [
+        "beta:FacilitySettingType"
+      ],
+      "isArray": true,
+      "githubIssue": "https://github.com/openactive/facility-types/issues/1"
+    },
+    {
+      "id": "beta:FacilitySettingType",
+      "type": "Class",
+      "label": "FacilitySettingType",
+      "comment": "An enumeration of settings in which a facility can exist.",
+      "subClassOf": [
+        "schema:Enumeration"
+      ],
+      "githubIssue": "https://github.com/openactive/facility-types/issues/1"
+    },
+    {
+      "id": "https://openactive.io/ns-beta#IndoorFacility",
+      "type": "beta:FacilitySettingType",
+      "label": "IndoorFacility",
+      "comment": "Facility is indoors",
+      "githubIssue": "https://github.com/openactive/facility-types/issues/1"
+    },
+    {
+      "id": "https://openactive.io/ns-beta#OutdoorFacility",
+      "type": "beta:FacilitySettingType",
+      "label": "OutdoorFacility",
+      "comment": "Facility is outdoors",
+      "githubIssue": "https://github.com/openactive/facility-types/issues/1"
     }
   ]
 }
