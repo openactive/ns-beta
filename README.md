@@ -89,4 +89,3 @@ Note that properties listed here _must_ have associated proposals in one of the 
 | [`beta:FacilitySettingType`](https://openactive.io/ns-beta#FacilitySettingType) | <a name="IndoorFacility"></a> `https://openactive.io/ns-beta#IndoorFacility` | [#1](https://github.com/openactive/facility-types/issues/1) | Facility is indoors |
 | [`beta:FacilitySettingType`](https://openactive.io/ns-beta#FacilitySettingType) | <a name="OutdoorFacility"></a> `https://openactive.io/ns-beta#OutdoorFacility` | [#1](https://github.com/openactive/facility-types/issues/1) | Facility is outdoors |
 | [`schema:BusinessEntityType`](https://schema.org/BusinessEntityType) | <a name="Member"></a> `https://openactive.io/ns-beta#Member` | [#80](https://github.com/openactive/modelling-opportunity-data/issues/80) | Indicates that a customer (eligableCustomerType) is a member of the business. |
-
