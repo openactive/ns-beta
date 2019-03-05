@@ -319,6 +319,36 @@
       "label": "OutdoorFacility",
       "comment": "Facility is outdoors",
       "githubIssue": "https://github.com/openactive/facility-types/issues/1"
+    },
+    {
+      "id": "beta:Cafe",
+      "type": "Class",
+      "label": "Cafe",
+      "comment": "Cafe is available",
+      "subClassOf": [
+        "schema:LocationFeatureSpecification"
+      ],
+      "githubIssue": "https://github.com/openactive/facility-types/issues/205"
+    },
+    {
+      "id": "beta:Bar",
+      "type": "Class",
+      "label": "Bar",
+      "comment": "Bar is available",
+      "subClassOf": [
+        "schema:LocationFeatureSpecification"
+      ],
+      "githubIssue": "https://github.com/openactive/facility-types/issues/205"
+    },
+    {
+      "id": "beta:IndicativeOffer",
+      "type": "Class",
+      "label": "IndicativeOffer",
+      "comment": "An Offer that provides an indication of the available price, not an exact amount.",
+      "subClassOf": [
+        "schema:Offer"
+      ],
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/new"
     }
   ]
 }
