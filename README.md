@@ -38,6 +38,7 @@ Note that properties listed here _must_ have associated proposals in one of the 
 ```
 
 
+
 # Namespace
 
 
@@ -67,9 +68,12 @@ Note that properties listed here _must_ have associated proposals in one of the 
 ## Classes
 
 | Class                      | subClasses | Proposal   | Description                                                                                 |
-|----------------------------|----------|------------|---------------------------------------------------------------------------------------------|
+|----------------------------|------------|------------|---------------------------------------------------------------------------------------------|
 | <a name="AvailableChannelType"></a> `beta:AvailableChannelType` | [`schema:Enumeration`](https://schema.org/Enumeration) | [#161](https://github.com/openactive/modelling-opportunity-data/issues/161) | An enumeration of channels through which a booking can be made. |
 | <a name="FacilitySettingType"></a> `beta:FacilitySettingType` | [`schema:Enumeration`](https://schema.org/Enumeration) | [#1](https://github.com/openactive/facility-types/issues/1) | An enumeration of settings in which a facility can exist. |
+| <a name="Bar"></a> `beta:Bar` | [`schema:LocationFeatureSpecification`](https://schema.org/LocationFeatureSpecification) | [#205](https://github.com/openactive/facility-types/issues/205) | Bar is available |
+| <a name="Cafe"></a> `beta:Cafe` | [`schema:LocationFeatureSpecification`](https://schema.org/LocationFeatureSpecification) | [#205](https://github.com/openactive/facility-types/issues/205) | Cafe is available |
+| <a name="IndicativeOffer"></a> `beta:IndicativeOffer` | [`schema:Offer`](https://schema.org/Offer) | [#new](https://github.com/openactive/modelling-opportunity-data/issues/new) | An Offer that provides an indication of the available price, not an exact amount. |
 | <a name="ConceptCollection"></a> `beta:ConceptCollection` | [`skos:Collection`](http://www.w3.org/2004/02/skos/core#Collection), [`schema:CreativeWork`](https://schema.org/CreativeWork) | [#203](https://github.com/openactive/modelling-opportunity-data/issues/203) | A SKOS Collection for use with SKOS ConceptScheme |
 
 
