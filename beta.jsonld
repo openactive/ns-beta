@@ -328,7 +328,7 @@
       "subClassOf": [
         "schema:LocationFeatureSpecification"
       ],
-      "githubIssue": "https://github.com/openactive/facility-types/issues/205"
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/205"
     },
     {
       "id": "beta:Bar",
@@ -338,7 +338,7 @@
       "subClassOf": [
         "schema:LocationFeatureSpecification"
       ],
-      "githubIssue": "https://github.com/openactive/facility-types/issues/205"
+      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/205"
     },
     {
       "id": "beta:IndicativeOffer",
