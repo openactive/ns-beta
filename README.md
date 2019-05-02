@@ -79,6 +79,7 @@ Note that properties listed here _must_ have associated proposals in one of the 
 ```
 
 
+
 # Namespace
 
 
@@ -96,6 +97,7 @@ Note that properties listed here _must_ have associated proposals in one of the 
 | <a name="distance"></a> ([`schema:Event`](https://schema.org/Event)) <br/>  `beta:distance` | [`schema:QuantitativeValue`](https://schema.org/QuantitativeValue) | [#3](https://github.com/openactive/ns-beta/issues/3) | The distance of a run, cycle or other activity. Must also include units. |
 | <a name="estimatedDuration"></a> ([`schema:Event`](https://schema.org/Event)) <br/>  `beta:estimatedDuration` | [`schema:QuantitativeValue`](https://schema.org/QuantitativeValue) | [#201](https://github.com/openactive/modelling-opportunity-data/issues/201) | A property that allows an Event duration to be represented as a range (e.g. 0-30mins, 30-60mins, 60-90mins, 90+). |
 | <a name="formattedDescription"></a> ([`schema:Event`](https://schema.org/Event), [`schema:Place`](https://schema.org/Place), [`schema:Organization`](https://schema.org/Organization), [`oa:FacilityUse`](https://openactive.io/FacilityUse)) <br/>  `beta:formattedDescription` | [`schema:Text`](https://schema.org/Text) | [#2](https://github.com/openactive/ns-beta/issues/2) | Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers. |
+| <a name="isVirtuallyCoached"></a> ([`schema:Event`](https://schema.org/Event)) <br/>  `beta:isVirtuallyCoached` | [`schema:Boolean`](https://schema.org/Boolean) | [#71](https://github.com/openactive/modelling-opportunity-data/issues/71) | A property that indicates whether the event is led by a virtual coach. |
 | <a name="isWheelchairAccessible"></a> ([`schema:Event`](https://schema.org/Event), [`oa:FacilityUse`](https://openactive.io/FacilityUse)) <br/>  `beta:isWheelchairAccessible` | [`schema:Boolean`](https://schema.org/Boolean) | [#166](https://github.com/openactive/modelling-opportunity-data/issues/166) | A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place. |
 | <a name="offerValidityPeriod"></a> ([`schema:Event`](https://schema.org/Event), [`oa:FacilityUse`](https://openactive.io/FacilityUse)) <br/>  `beta:offerValidityPeriod` | [`schema:Duration`](https://schema.org/Duration) | [#204](https://github.com/openactive/modelling-opportunity-data/issues/204) | Duration before the event for which the associated Offers are valid |
 | <a name="registrationCount"></a> ([`schema:Event`](https://schema.org/Event)) <br/>  `beta:registrationCount` | [`schema:Integer`](https://schema.org/Integer) | [#13](https://github.com/openactive/ns-beta/issues/13) | For events that have an unlimited number of tickets, captures the number of registrations (intention to attend). |
