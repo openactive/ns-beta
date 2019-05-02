@@ -354,7 +354,7 @@
       "id": "beta:isVirtuallyCoached",
       "type": "Property",
       "label": "isVirtuallyCoached",
-      "comment": "A property that indicates whether the event is led by a virtual coach.",
+      "comment": "A property that indicates whether the event is led by a virtual coach. Only relevant if a class `isCoached`.",
       "domainIncludes": [
         "schema:Event"
       ],
