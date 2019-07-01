@@ -212,7 +212,8 @@
       "label": "timeZone",
       "comment": "The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
       "domainIncludes": [
-        "schema:Schedule"
+        "schema:Schedule",
+        "schema:PartialSchedule"
       ],
       "rangeIncludes": [
         "schema:Text"
