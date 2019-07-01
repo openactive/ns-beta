@@ -229,7 +229,8 @@
         "schema:Event",
         "oa:FacilityUse",
         "schema:Brand",
-        "schema:Organization"
+        "schema:Organization",
+        "schema:Course"
       ],
       "rangeIncludes": [
         "schema:VideoObject"
