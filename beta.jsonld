@@ -288,8 +288,9 @@
       "id": "beta:facilitySetting",
       "type": "Property",
       "label": "facilityType",
-      "comment": "Whether the facility is indoor or outdoor.",
+      "comment": "Whether the event or facility is indoor or outdoor.",
       "domainIncludes": [
+        "schema:Event",
         "oa:FacilityUse"
       ],
       "rangeIncludes": [
