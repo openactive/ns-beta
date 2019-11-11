@@ -15,6 +15,7 @@
         "schema:Event",
         "schema:Place",
         "schema:Organization",
+        "schema:Person",
         "oa:FacilityUse"
       ],
       "rangeIncludes": [
