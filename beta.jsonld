@@ -1,372 +1,359 @@
 {
-  "@context": [
-    "https://openactive.io/extension",
-    {
-      "beta": "https://openactive.io/ns-beta#"
-    }
-  ],
-  "@graph": [
-    {
-      "id": "beta:formattedDescription",
-      "type": "Property",
-      "label": "formattedDescription",
-      "comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
-      "domainIncludes": [
-        "schema:Event",
-        "schema:Place",
-        "schema:Organization",
-        "schema:Person",
-        "oa:FacilityUse"
-      ],
-      "rangeIncludes": [
-        "schema:Text"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/ns-beta/issues/2"
-    },
-    {
-      "id": "beta:distance",
-      "type": "Property",
-      "label": "distance",
-      "comment": "The distance of a run, cycle or other activity. Must also include units.",
-      "domainIncludes": [
-        "schema:Event"
-      ],
-      "rangeIncludes": [
-        "schema:QuantitativeValue"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/ns-beta/issues/3"
-    },
-    {
-      "id": "beta:availability",
-      "type": "Property",
-      "label": "availability",
-      "comment": "For data publishers not wishing to disclose the granular availability of their sessions openly.",
-      "domainIncludes": [
-        "schema:Event"
-      ],
-      "rangeIncludes": [
-        "schema:Text"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/ns-beta/issues/9"
-    },
-    {
-      "id": "beta:attendeeCount",
-      "type": "Property",
-      "label": "attendeeCount",
-      "comment": "For events that have an unlimited number of tickets, captures the number of attendees (actual attendance).",
-      "domainIncludes": [
-        "schema:Event"
-      ],
-      "rangeIncludes": [
-        "schema:Integer"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/ns-beta/issues/12"
-    },
-    {
-      "id": "beta:registrationCount",
-      "type": "Property",
-      "label": "registrationCount",
-      "comment": "For events that have an unlimited number of tickets, captures the number of registrations (intention to attend).",
-      "domainIncludes": [
-        "schema:Event"
-      ],
-      "rangeIncludes": [
-        "schema:Integer"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/ns-beta/issues/13"
-    },
-    {
-      "id": "beta:course",
-      "type": "Property",
-      "label": "course",
-      "comment": "This course for which this is an offering.",
-      "domainIncludes": [
-        "schema:CourseInstance"
-      ],
-      "rangeIncludes": [
-        "schema:Course"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/164"
-    },
-    {
-      "id": "beta:logo",
-      "type": "Property",
-      "label": "logo",
-      "comment": "An associated logo for a course.",
-      "domainIncludes": [
-        "schema:Course"
-      ],
-      "rangeIncludes": [
-        "schema:ImageObject"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/164"
-    },
-    {
-      "id": "https://openactive.io/ns-beta#Member",
-      "type": "schema:BusinessEntityType",
-      "label": "Member",
-      "comment": "Indicates that a customer (eligableCustomerType) is a member of the business.",
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/80"
-    },
-    {
-      "id": "beta:availableChannel",
-      "type": "Property",
-      "label": "availableChannel",
-      "comment": "The channels through which a booking can be made.",
-      "domainIncludes": [
-        "schema:Offer"
-      ],
-      "rangeIncludes": [
-        "beta:AvailableChannelType"
-      ],
-      "isArray": true,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
-    },
-    {
-      "id": "beta:AvailableChannelType",
-      "type": "Class",
-      "label": "AvailableChannelType",
-      "comment": "An enumeration of channels through which a booking can be made.",
-      "subClassOf": [
-        "schema:Enumeration"
-      ],
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
-    },
-    {
-      "id": "https://openactive.io/ns-beta#TelephoneAdvanceBooking",
-      "type": "beta:AvailableChannelType",
-      "label": "TelephoneAdvanceBooking",
-      "comment": "Bookings can be made but not paid for in advance by telephone.",
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
-    },
-    {
-      "id": "https://openactive.io/ns-beta#TelephonePrepayment",
-      "type": "beta:AvailableChannelType",
-      "label": "TelephonePrepayment",
-      "comment": "Bookings can be made and paid for in advance by telephone.",
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
-    },
-    {
-      "id": "https://openactive.io/ns-beta#OnlinePrepayment",
-      "type": "beta:AvailableChannelType",
-      "label": "OnlinePrepayment",
-      "comment": "Bookings can be made and paid for online.",
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
-    },
-    {
-      "id": "https://openactive.io/ns-beta#OpenBookingPrepayment",
-      "type": "beta:AvailableChannelType",
-      "label": "OpenBookingPrepayment",
-      "comment": "Bookings can be made via the Open Booking API.",
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/161"
-    },
-    {
-      "id": "beta:isWheelchairAccessible",
-      "type": "Property",
-      "label": "isWheelchairAccessible",
-      "comment": "A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
-      "domainIncludes": [
-        "schema:Event",
-        "oa:FacilityUse"
-      ],
-      "rangeIncludes": [
-        "schema:Boolean"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/166"
-    },
-    {
-      "id": "beta:estimatedDuration",
-      "type": "Property",
-      "label": "estimatedDuration",
-      "comment": "A property that allows an Event duration to be represented as a range (e.g. 0-30mins, 30-60mins, 60-90mins, 90+).",
-      "domainIncludes": [
-        "schema:Event"
-      ],
-      "rangeIncludes": [
-        "schema:QuantitativeValue"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/201"
-    },
-    {
-      "id": "beta:ConceptCollection",
-      "type": "Class",
-      "label": "ConceptCollection",
-      "comment": "A SKOS Collection for use with SKOS ConceptScheme",
-      "subClassOf": [
-        "skos:Collection",
-        "schema:CreativeWork"
-      ],
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/203"
-    },
-    {
-      "id": "beta:timeZone",
-      "type": "Property",
-      "label": "timeZone",
-      "comment": "The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
-      "domainIncludes": [
-        "pending:Schedule",
-        "oa:PartialSchedule"
-      ],
-      "rangeIncludes": [
-        "schema:Text"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/197"
-    },
-    {
-      "id": "beta:video",
-      "type": "Property",
-      "label": "video",
-      "comment": "An related video object.",
-      "domainIncludes": [
-        "schema:Event",
-        "oa:FacilityUse",
-        "schema:Brand",
-        "schema:Organization",
-        "schema:Course"
-      ],
-      "rangeIncludes": [
-        "schema:VideoObject"
-      ],
-      "isArray": true,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/88"
-    },
-    {
-      "id": "beta:sportsActivityLocation",
-      "type": "Property",
-      "label": "sportsActivityLocation",
-      "comment": "Internal location of the event, e.g. Court 1",
-      "domainIncludes": [
-        "schema:Event",
-        "oa:Slot",
-        "oa:FacilityUse"
-      ],
-      "rangeIncludes": [
-        "schema:SportsActivityLocation"
-      ],
-      "isArray": true,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/110"
-    },
-    {
-      "id": "beta:offerValidityPeriod",
-      "type": "Property",
-      "label": "offerValidityPeriod",
-      "comment": "Duration before the event for which the associated Offers are valid",
-      "domainIncludes": [
-        "schema:Event",
-        "oa:FacilityUse"
-      ],
-      "rangeIncludes": [
-        "schema:Duration"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/204"
-    },
-    {
-      "id": "beta:facilityType",
-      "type": "Property",
-      "label": "facilityType",
-      "comment": "The type of facility in use.",
-      "domainIncludes": [
-        "oa:FacilityUse"
-      ],
-      "rangeIncludes": [
-        "skos:Concept"
-      ],
-      "isArray": true,
-      "githubIssue": "https://github.com/openactive/facility-types/issues/1"
-    },
-    {
-      "id": "beta:facilitySetting",
-      "type": "Property",
-      "label": "facilityType",
-      "comment": "Whether the event or facility is indoor or outdoor.",
-      "domainIncludes": [
-        "schema:Event",
-        "oa:FacilityUse"
-      ],
-      "rangeIncludes": [
-        "beta:FacilitySettingType"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/facility-types/issues/1"
-    },
-    {
-      "id": "beta:FacilitySettingType",
-      "type": "Class",
-      "label": "FacilitySettingType",
-      "comment": "An enumeration of settings in which a facility can exist.",
-      "subClassOf": [
-        "schema:Enumeration"
-      ],
-      "githubIssue": "https://github.com/openactive/facility-types/issues/1"
-    },
-    {
-      "id": "https://openactive.io/ns-beta#IndoorFacility",
-      "type": "beta:FacilitySettingType",
-      "label": "IndoorFacility",
-      "comment": "Facility is indoors",
-      "githubIssue": "https://github.com/openactive/facility-types/issues/1"
-    },
-    {
-      "id": "https://openactive.io/ns-beta#OutdoorFacility",
-      "type": "beta:FacilitySettingType",
-      "label": "OutdoorFacility",
-      "comment": "Facility is outdoors",
-      "githubIssue": "https://github.com/openactive/facility-types/issues/1"
-    },
-    {
-      "id": "beta:Cafe",
-      "type": "Class",
-      "label": "Cafe",
-      "comment": "Cafe is available",
-      "subClassOf": [
-        "schema:LocationFeatureSpecification"
-      ],
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/205"
-    },
-    {
-      "id": "beta:Bar",
-      "type": "Class",
-      "label": "Bar",
-      "comment": "Bar is available",
-      "subClassOf": [
-        "schema:LocationFeatureSpecification"
-      ],
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/205"
-    },
-    {
-      "id": "beta:IndicativeOffer",
-      "type": "Class",
-      "label": "IndicativeOffer",
-      "comment": "An Offer that provides an indication of the available price, not an exact amount.",
-      "subClassOf": [
-        "schema:Offer"
-      ],
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/207"
-    },
-    {
-      "id": "beta:isVirtuallyCoached",
-      "type": "Property",
-      "label": "isVirtuallyCoached",
-      "comment": "A property that indicates whether the event is led by a virtual coach. Only relevant if an event `isCoached`.",
-      "domainIncludes": [
-        "schema:Event"
-      ],
-      "rangeIncludes": [
-        "schema:Boolean"
-      ],
-      "isArray": false,
-      "githubIssue": "https://github.com/openactive/modelling-opportunity-data/issues/71"
-    }
-  ]
+   "@context":[
+      "https://openactive.io/extension",
+      {
+         "beta":"https://openactive.io/ns-beta#"
+      }
+   ],
+   "@graph":[
+      {
+         "id":"beta:formattedDescription",
+         "type":"Property",
+         "label":"formattedDescription",
+         "comment":"Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
+         "domainIncludes":[
+            "schema:Event",
+            "schema:Place",
+            "schema:Organization",
+            "schema:Person",
+            "oa:FacilityUse"
+         ],
+         "rangeIncludes":[
+            "schema:Text"
+         ],
+         "githubIssue":"https://github.com/openactive/ns-beta/issues/2"
+      },
+      {
+         "id":"beta:distance",
+         "type":"Property",
+         "label":"distance",
+         "comment":"The distance of a run, cycle or other activity. Must also include units.",
+         "domainIncludes":[
+            "schema:Event"
+         ],
+         "rangeIncludes":[
+            "schema:QuantitativeValue"
+         ],
+         "githubIssue":"https://github.com/openactive/ns-beta/issues/3"
+      },
+      {
+         "id":"beta:availability",
+         "type":"Property",
+         "label":"availability",
+         "comment":"For data publishers not wishing to disclose the granular availability of their sessions openly.",
+         "domainIncludes":[
+            "schema:Event"
+         ],
+         "rangeIncludes":[
+            "schema:Text"
+         ],
+         "githubIssue":"https://github.com/openactive/ns-beta/issues/9"
+      },
+      {
+         "id":"beta:attendeeCount",
+         "type":"Property",
+         "label":"attendeeCount",
+         "comment":"For events that have an unlimited number of tickets, captures the number of attendees (actual attendance).",
+         "domainIncludes":[
+            "schema:Event"
+         ],
+         "rangeIncludes":[
+            "schema:Integer"
+         ],
+         "githubIssue":"https://github.com/openactive/ns-beta/issues/12"
+      },
+      {
+         "id":"beta:registrationCount",
+         "type":"Property",
+         "label":"registrationCount",
+         "comment":"For events that have an unlimited number of tickets, captures the number of registrations (intention to attend).",
+         "domainIncludes":[
+            "schema:Event"
+         ],
+         "rangeIncludes":[
+            "schema:Integer"
+         ],
+         "githubIssue":"https://github.com/openactive/ns-beta/issues/13"
+      },
+      {
+         "id":"beta:course",
+         "type":"Property",
+         "label":"course",
+         "comment":"This course for which this is an offering.",
+         "domainIncludes":[
+            "schema:CourseInstance"
+         ],
+         "rangeIncludes":[
+            "schema:Course"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/164"
+      },
+      {
+         "id":"beta:logo",
+         "type":"Property",
+         "label":"logo",
+         "comment":"An associated logo for a course.",
+         "domainIncludes":[
+            "schema:Course"
+         ],
+         "rangeIncludes":[
+            "schema:ImageObject"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/164"
+      },
+      {
+         "id":"https://openactive.io/ns-beta#Member",
+         "type":"schema:BusinessEntityType",
+         "label":"Member",
+         "comment":"Indicates that a customer (eligableCustomerType) is a member of the business.",
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/80"
+      },
+      {
+         "id":"beta:availableChannel",
+         "type":"Property",
+         "label":"availableChannel",
+         "comment":"The channels through which a booking can be made.",
+         "domainIncludes":[
+            "schema:Offer"
+         ],
+         "rangeIncludes":[
+            "beta:AvailableChannelType"
+         ],
+         "@container":"@list",
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+      },
+      {
+         "id":"beta:AvailableChannelType",
+         "type":"Class",
+         "label":"AvailableChannelType",
+         "comment":"An enumeration of channels through which a booking can be made.",
+         "subClassOf":[
+            "schema:Enumeration"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+      },
+      {
+         "id":"https://openactive.io/ns-beta#TelephoneAdvanceBooking",
+         "type":"beta:AvailableChannelType",
+         "label":"TelephoneAdvanceBooking",
+         "comment":"Bookings can be made but not paid for in advance by telephone.",
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+      },
+      {
+         "id":"https://openactive.io/ns-beta#TelephonePrepayment",
+         "type":"beta:AvailableChannelType",
+         "label":"TelephonePrepayment",
+         "comment":"Bookings can be made and paid for in advance by telephone.",
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+      },
+      {
+         "id":"https://openactive.io/ns-beta#OnlinePrepayment",
+         "type":"beta:AvailableChannelType",
+         "label":"OnlinePrepayment",
+         "comment":"Bookings can be made and paid for online.",
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+      },
+      {
+         "id":"https://openactive.io/ns-beta#OpenBookingPrepayment",
+         "type":"beta:AvailableChannelType",
+         "label":"OpenBookingPrepayment",
+         "comment":"Bookings can be made via the Open Booking API.",
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+      },
+      {
+         "id":"beta:isWheelchairAccessible",
+         "type":"Property",
+         "label":"isWheelchairAccessible",
+         "comment":"A property that details whether the event is suitable for wheelchair access. Placed on Event as this field could be used to detail whether the Event is suitable, as well as the Place.",
+         "domainIncludes":[
+            "schema:Event",
+            "oa:FacilityUse"
+         ],
+         "rangeIncludes":[
+            "schema:Boolean"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/166"
+      },
+      {
+         "id":"beta:estimatedDuration",
+         "type":"Property",
+         "label":"estimatedDuration",
+         "comment":"A property that allows an Event duration to be represented as a range (e.g. 0-30mins, 30-60mins, 60-90mins, 90+).",
+         "domainIncludes":[
+            "schema:Event"
+         ],
+         "rangeIncludes":[
+            "schema:QuantitativeValue"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/201"
+      },
+      {
+         "id":"beta:ConceptCollection",
+         "type":"Class",
+         "label":"ConceptCollection",
+         "comment":"A SKOS Collection for use with SKOS ConceptScheme",
+         "subClassOf":[
+            "skos:Collection",
+            "schema:CreativeWork"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/203"
+      },
+      {
+         "id":"beta:timeZone",
+         "type":"Property",
+         "label":"timeZone",
+         "comment":"The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
+         "domainIncludes":[
+            "pending:Schedule",
+            "oa:PartialSchedule"
+         ],
+         "rangeIncludes":[
+            "schema:Text"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/197"
+      },
+      {
+         "id":"beta:video",
+         "type":"Property",
+         "label":"video",
+         "comment":"An related video object.",
+         "domainIncludes":[
+            "schema:Event",
+            "oa:FacilityUse",
+            "schema:Brand",
+            "schema:Organization",
+            "schema:Course"
+         ],
+         "rangeIncludes":[
+            "schema:VideoObject"
+         ],
+         "@container":"@list",
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/88"
+      },
+      {
+         "id":"beta:sportsActivityLocation",
+         "type":"Property",
+         "label":"sportsActivityLocation",
+         "comment":"Internal location of the event, e.g. Court 1",
+         "domainIncludes":[
+            "schema:Event",
+            "oa:Slot",
+            "oa:FacilityUse"
+         ],
+         "rangeIncludes":[
+            "schema:SportsActivityLocation"
+         ],
+         "@container":"@list",
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/110"
+      },
+      {
+         "id":"beta:offerValidityPeriod",
+         "type":"Property",
+         "label":"offerValidityPeriod",
+         "comment":"Duration before the event for which the associated Offers are valid",
+         "domainIncludes":[
+            "schema:Event",
+            "oa:FacilityUse"
+         ],
+         "rangeIncludes":[
+            "schema:Duration"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/204"
+      },
+      {
+         "id":"beta:facilityType",
+         "type":"Property",
+         "label":"facilityType",
+         "comment":"The type of facility in use.",
+         "domainIncludes":[
+            "oa:FacilityUse"
+         ],
+         "rangeIncludes":[
+            "skos:Concept"
+         ],
+         "@container":"@list",
+         "githubIssue":"https://github.com/openactive/facility-types/issues/1"
+      },
+      {
+         "id":"beta:facilitySetting",
+         "type":"Property",
+         "label":"facilityType",
+         "comment":"Whether the event or facility is indoor or outdoor.",
+         "domainIncludes":[
+            "schema:Event",
+            "oa:FacilityUse"
+         ],
+         "rangeIncludes":[
+            "beta:FacilitySettingType"
+         ],
+         "githubIssue":"https://github.com/openactive/facility-types/issues/1"
+      },
+      {
+         "id":"beta:FacilitySettingType",
+         "type":"Class",
+         "label":"FacilitySettingType",
+         "comment":"An enumeration of settings in which a facility can exist.",
+         "subClassOf":[
+            "schema:Enumeration"
+         ],
+         "githubIssue":"https://github.com/openactive/facility-types/issues/1"
+      },
+      {
+         "id":"https://openactive.io/ns-beta#IndoorFacility",
+         "type":"beta:FacilitySettingType",
+         "label":"IndoorFacility",
+         "comment":"Facility is indoors",
+         "githubIssue":"https://github.com/openactive/facility-types/issues/1"
+      },
+      {
+         "id":"https://openactive.io/ns-beta#OutdoorFacility",
+         "type":"beta:FacilitySettingType",
+         "label":"OutdoorFacility",
+         "comment":"Facility is outdoors",
+         "githubIssue":"https://github.com/openactive/facility-types/issues/1"
+      },
+      {
+         "id":"beta:Cafe",
+         "type":"Class",
+         "label":"Cafe",
+         "comment":"Cafe is available",
+         "subClassOf":[
+            "schema:LocationFeatureSpecification"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/205"
+      },
+      {
+         "id":"beta:Bar",
+         "type":"Class",
+         "label":"Bar",
+         "comment":"Bar is available",
+         "subClassOf":[
+            "schema:LocationFeatureSpecification"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/205"
+      },
+      {
+         "id":"beta:IndicativeOffer",
+         "type":"Class",
+         "label":"IndicativeOffer",
+         "comment":"An Offer that provides an indication of the available price, not an exact amount.",
+         "subClassOf":[
+            "schema:Offer"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/207"
+      },
+      {
+         "id":"beta:isVirtuallyCoached",
+         "type":"Property",
+         "label":"isVirtuallyCoached",
+         "comment":"A property that indicates whether the event is led by a virtual coach. Only relevant if an event `isCoached`.",
+         "domainIncludes":[
+            "schema:Event"
+         ],
+         "rangeIncludes":[
+            "schema:Boolean"
+         ],
+         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/71"
+      }
+   ]
 }
