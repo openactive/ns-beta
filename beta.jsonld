@@ -21,7 +21,7 @@
          "rangeIncludes":[
             "schema:Text"
          ],
-         "githubIssue":"https://github.com/openactive/ns-beta/issues/2"
+         "discussionUrl":"https://github.com/openactive/ns-beta/issues/2"
       },
       {
          "id":"beta:distance",
@@ -34,7 +34,7 @@
          "rangeIncludes":[
             "schema:QuantitativeValue"
          ],
-         "githubIssue":"https://github.com/openactive/ns-beta/issues/3"
+         "discussionUrl":"https://github.com/openactive/ns-beta/issues/3"
       },
       {
          "id":"beta:availability",
@@ -47,7 +47,7 @@
          "rangeIncludes":[
             "schema:Text"
          ],
-         "githubIssue":"https://github.com/openactive/ns-beta/issues/9"
+         "discussionUrl":"https://github.com/openactive/ns-beta/issues/9"
       },
       {
          "id":"beta:attendeeCount",
@@ -60,7 +60,7 @@
          "rangeIncludes":[
             "schema:Integer"
          ],
-         "githubIssue":"https://github.com/openactive/ns-beta/issues/12"
+         "discussionUrl":"https://github.com/openactive/ns-beta/issues/12"
       },
       {
          "id":"beta:registrationCount",
@@ -73,7 +73,7 @@
          "rangeIncludes":[
             "schema:Integer"
          ],
-         "githubIssue":"https://github.com/openactive/ns-beta/issues/13"
+         "discussionUrl":"https://github.com/openactive/ns-beta/issues/13"
       },
       {
          "id":"beta:course",
@@ -86,7 +86,7 @@
          "rangeIncludes":[
             "schema:Course"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/164"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/164"
       },
       {
          "id":"beta:logo",
@@ -99,14 +99,14 @@
          "rangeIncludes":[
             "schema:ImageObject"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/164"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/164"
       },
       {
          "id":"https://openactive.io/ns-beta#Member",
          "type":"schema:BusinessEntityType",
          "label":"Member",
          "comment":"Indicates that a customer (eligableCustomerType) is a member of the business.",
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/80"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/80"
       },
       {
          "id":"beta:availableChannel",
@@ -120,7 +120,7 @@
             "beta:AvailableChannelType"
          ],
          "@container":"@list",
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
       },
       {
          "id":"beta:AvailableChannelType",
@@ -130,35 +130,35 @@
          "subClassOf":[
             "schema:Enumeration"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
       },
       {
          "id":"https://openactive.io/ns-beta#TelephoneAdvanceBooking",
          "type":"beta:AvailableChannelType",
          "label":"TelephoneAdvanceBooking",
          "comment":"Bookings can be made but not paid for in advance by telephone.",
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
       },
       {
          "id":"https://openactive.io/ns-beta#TelephonePrepayment",
          "type":"beta:AvailableChannelType",
          "label":"TelephonePrepayment",
          "comment":"Bookings can be made and paid for in advance by telephone.",
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
       },
       {
          "id":"https://openactive.io/ns-beta#OnlinePrepayment",
          "type":"beta:AvailableChannelType",
          "label":"OnlinePrepayment",
          "comment":"Bookings can be made and paid for online.",
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
       },
       {
          "id":"https://openactive.io/ns-beta#OpenBookingPrepayment",
          "type":"beta:AvailableChannelType",
          "label":"OpenBookingPrepayment",
          "comment":"Bookings can be made via the Open Booking API.",
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
       },
       {
          "id":"beta:isWheelchairAccessible",
@@ -172,7 +172,7 @@
          "rangeIncludes":[
             "schema:Boolean"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/166"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/166"
       },
       {
          "id":"beta:estimatedDuration",
@@ -185,7 +185,7 @@
          "rangeIncludes":[
             "schema:QuantitativeValue"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/201"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/201"
       },
       {
          "id":"beta:ConceptCollection",
@@ -196,7 +196,7 @@
             "skos:Collection",
             "schema:CreativeWork"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/203"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/203"
       },
       {
          "id":"beta:timeZone",
@@ -210,7 +210,7 @@
          "rangeIncludes":[
             "schema:Text"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/197"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/197"
       },
       {
          "id":"beta:video",
@@ -228,7 +228,7 @@
             "schema:VideoObject"
          ],
          "@container":"@list",
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/88"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/88"
       },
       {
          "id":"beta:sportsActivityLocation",
@@ -244,7 +244,7 @@
             "schema:SportsActivityLocation"
          ],
          "@container":"@list",
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/110"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/110"
       },
       {
          "id":"beta:offerValidityPeriod",
@@ -258,7 +258,7 @@
          "rangeIncludes":[
             "schema:Duration"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/204"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/204"
       },
       {
          "id":"beta:facilityType",
@@ -272,7 +272,7 @@
             "skos:Concept"
          ],
          "@container":"@list",
-         "githubIssue":"https://github.com/openactive/facility-types/issues/1"
+         "discussionUrl":"https://github.com/openactive/facility-types/issues/1"
       },
       {
          "id":"beta:facilitySetting",
@@ -286,7 +286,7 @@
          "rangeIncludes":[
             "beta:FacilitySettingType"
          ],
-         "githubIssue":"https://github.com/openactive/facility-types/issues/1"
+         "discussionUrl":"https://github.com/openactive/facility-types/issues/1"
       },
       {
          "id":"beta:FacilitySettingType",
@@ -296,21 +296,21 @@
          "subClassOf":[
             "schema:Enumeration"
          ],
-         "githubIssue":"https://github.com/openactive/facility-types/issues/1"
+         "discussionUrl":"https://github.com/openactive/facility-types/issues/1"
       },
       {
          "id":"https://openactive.io/ns-beta#IndoorFacility",
          "type":"beta:FacilitySettingType",
          "label":"IndoorFacility",
          "comment":"Facility is indoors",
-         "githubIssue":"https://github.com/openactive/facility-types/issues/1"
+         "discussionUrl":"https://github.com/openactive/facility-types/issues/1"
       },
       {
          "id":"https://openactive.io/ns-beta#OutdoorFacility",
          "type":"beta:FacilitySettingType",
          "label":"OutdoorFacility",
          "comment":"Facility is outdoors",
-         "githubIssue":"https://github.com/openactive/facility-types/issues/1"
+         "discussionUrl":"https://github.com/openactive/facility-types/issues/1"
       },
       {
          "id":"beta:Cafe",
@@ -320,7 +320,7 @@
          "subClassOf":[
             "schema:LocationFeatureSpecification"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/205"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/205"
       },
       {
          "id":"beta:Bar",
@@ -330,7 +330,7 @@
          "subClassOf":[
             "schema:LocationFeatureSpecification"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/205"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/205"
       },
       {
          "id":"beta:IndicativeOffer",
@@ -340,7 +340,7 @@
          "subClassOf":[
             "schema:Offer"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/207"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/207"
       },
       {
          "id":"beta:isVirtuallyCoached",
@@ -353,7 +353,7 @@
          "rangeIncludes":[
             "schema:Boolean"
          ],
-         "githubIssue":"https://github.com/openactive/modelling-opportunity-data/issues/71"
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/71"
       }
    ]
 }
