@@ -161,6 +161,13 @@
          "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
       },
       {
+         "id":"https://openactive.io/OpenBookingCustomerAuthentication",
+         "type":"beta:AvailableChannelType",
+         "label":"OpenBookingPrepayment",
+         "comment":"Bookings can be made via the Open Booking API.",
+         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
+      },
+      {
          "id":"beta:isWheelchairAccessible",
          "type":"Property",
          "label":"isWheelchairAccessible",
@@ -427,6 +434,27 @@
             "schema:DateTime"
          ],
          "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/217"
+      },
+      {
+         "id":"beta:AuthenticatedPerson",
+         "type":"Class",
+         "label": "Authenticated Person",
+         "comment":"Usable as both customer and attendee to indicate Persons who are authenticated to the Seller and granted access to the Broker to book on their behalf.",
+         "rdfs:subClassOf": "http://schema.org/Person",
+         "discussionUrl":"https://github.com/openactive/open-booking-api/issues/120"
+      },
+      {
+         "id":"beta:accessToken",
+         "type":"Property",
+         "label":"Access Token",
+         "comment":"Token indicating the Broker's authorisation to book on behalf of a Customer.",
+         "domainIncludes":[
+            "beta:AuthenticatedPerson"
+         ],
+         "rangeIncludes":[
+            "schema:Text"
+         ],
+         "discussionUrl":"https://github.com/openactive/open-booking-api/issues/120"
       }
    ]
 }
