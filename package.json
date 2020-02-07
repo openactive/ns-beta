@@ -1,0 +1,25 @@
+{
+  "name": "ns-beta",
+  "version": "1.0.0",
+  "description": "Beta namespace for the OpenActive Vocabulary, as defined in the Modelling Opportunity Data Specification",
+  "scripts": {
+    "start": "./deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openactive/ns-beta.git"
+  },
+  "keywords": [
+    "OpenActive"
+  ],
+  "author": "OpenActive Community",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openactive/ns-beta/issues"
+  },
+  "homepage": "https://github.com/openactive/ns-beta#readme",
+  "dependencies": {
+    "extension-documentation-generator": "git+https://github.com/openactive/extension-documentation-generator.git"
+  }
+}
