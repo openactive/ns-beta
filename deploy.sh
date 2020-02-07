@@ -23,6 +23,7 @@ cd ..
 
 # Regenerate Beta file only
 node ./node_modules/extension-documentation-generator/index.js beta.jsonld header.md with-issues > ./out/index.md
+cp beta.jsonld ./out/
 
 cd out
 
