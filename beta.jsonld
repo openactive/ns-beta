@@ -109,65 +109,6 @@
          "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/80"
       },
       {
-         "id":"beta:availableChannel",
-         "type":"Property",
-         "label":"availableChannel",
-         "comment":"The channels through which a booking can be made.",
-         "domainIncludes":[
-            "schema:Offer"
-         ],
-         "rangeIncludes":[
-            "beta:AvailableChannelType"
-         ],
-         "@container":"@list",
-         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
-      },
-      {
-         "id":"beta:AvailableChannelType",
-         "type":"Class",
-         "label":"AvailableChannelType",
-         "comment":"An enumeration of channels through which a booking can be made.",
-         "subClassOf":[
-            "schema:Enumeration"
-         ],
-         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
-      },
-      {
-         "id":"https://openactive.io/ns-beta#TelephoneAdvanceBooking",
-         "type":"beta:AvailableChannelType",
-         "label":"TelephoneAdvanceBooking",
-         "comment":"Bookings can be made but not paid for in advance by telephone.",
-         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
-      },
-      {
-         "id":"https://openactive.io/ns-beta#TelephonePrepayment",
-         "type":"beta:AvailableChannelType",
-         "label":"TelephonePrepayment",
-         "comment":"Bookings can be made and paid for in advance by telephone.",
-         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
-      },
-      {
-         "id":"https://openactive.io/ns-beta#OnlinePrepayment",
-         "type":"beta:AvailableChannelType",
-         "label":"OnlinePrepayment",
-         "comment":"Bookings can be made and paid for online.",
-         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
-      },
-      {
-         "id":"https://openactive.io/ns-beta#OpenBookingPrepayment",
-         "type":"beta:AvailableChannelType",
-         "label":"OpenBookingPrepayment",
-         "comment":"Bookings can be made via the Open Booking API.",
-         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
-      },
-      {
-         "id":"https://openactive.io/OpenBookingCustomerAuthentication",
-         "type":"beta:AvailableChannelType",
-         "label":"OpenBookingPrepayment",
-         "comment":"Bookings can be made via the Open Booking API.",
-         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/161"
-      },
-      {
          "id":"beta:isWheelchairAccessible",
          "type":"Property",
          "label":"isWheelchairAccessible",
@@ -209,7 +150,7 @@
          "id":"beta:timeZone",
          "type":"Property",
          "label":"timeZone",
-         "comment":"The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
+         "comment":"[DEPRECATED: This beta property is now deprecated, please use `schema:scheduleTimezone` instead.] The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
          "domainIncludes":[
             "pending:Schedule",
             "oa:PartialSchedule"
@@ -363,28 +304,16 @@
          "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/71"
       },
       {
-         "id":"beta:publisher",
-         "type":"Property",
-         "label":"publisher",
-         "comment":"The organisation responsible for publishing a Trust Certification.",
-         "domainIncludes":[
-            "schema:Event"
-         ],
-         "rangeIncludes":[
-            "schema:Organization"
-         ],
-         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/217"
-      },
-      {
          "id":"beta:certificationLevel",
          "type":"Property",
          "label":"certificationLevel",
          "comment":"Property containing an array of CertificationLevels",
          "domainIncludes":[
-            "schema:CertificationScheme"
+            "beta:CertificationScheme",
+            "beta:TrustCertification"
          ],
          "rangeIncludes":[
-            "schema:CertificationLevel"
+            "beta:CertificationLevel"
          ],
          "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/217"
       },
@@ -392,6 +321,9 @@
          "id":"beta:CertificationScheme",
          "type":"Class",
          "label":"CertificationScheme",
+         "subClassOf":[
+            "schema:Thing"
+         ],
          "comment":"Defines a coherent list of certifications, optionally related to one or more activities.",
          "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/217"
       },
@@ -399,6 +331,9 @@
          "id":"beta:CertificationLevel",
          "type":"Class",
          "label":"CertificationLevel",
+         "subClassOf":[
+            "schema:Thing"
+         ],
          "comment":"Defines a trust certification.",
          "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/217"
       },
@@ -419,34 +354,26 @@
          "id":"beta:TrustCertification",
          "type":"Class",
          "label":"TrustCertification",
+         "subClassOf":[
+            "schema:Thing"
+         ],
          "comment":"Links activity-providing Organisations to their certifications.",
-         "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/217"
-      },
-      {
-         "id":"beta:expiry",
-         "type":"Property",
-         "label":"expiry",
-         "comment":"The date and time when a given TrustCertification expires and should no longer be used as a basis of trust.",
-         "domainIncludes":[
-            "beta:TrustCertification"
-         ],
-         "rangeIncludes":[
-            "schema:DateTime"
-         ],
          "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/217"
       },
       {
          "id":"beta:AuthenticatedPerson",
          "type":"Class",
-         "label": "Authenticated Person",
+         "label":"AuthenticatedPerson",
+         "subClassOf":[
+            "schema:Person"
+         ],
          "comment":"Usable as both customer and attendee to indicate Persons who are authenticated to the Seller and granted access to the Broker to book on their behalf.",
-         "rdfs:subClassOf": "http://schema.org/Person",
          "discussionUrl":"https://github.com/openactive/open-booking-api/issues/120"
       },
       {
          "id":"beta:accessToken",
          "type":"Property",
-         "label":"Access Token",
+         "label":"accessToken",
          "comment":"Token indicating the Broker's authorisation to book on behalf of a Customer.",
          "domainIncludes":[
             "beta:AuthenticatedPerson"
@@ -455,6 +382,26 @@
             "schema:Text"
          ],
          "discussionUrl":"https://github.com/openactive/open-booking-api/issues/120"
+      },
+      {	
+         "id":"https://openactive.io/ns-beta#OpenBookingCustomerAuthentication",	
+         "type":"oa:AvailableChannelType",
+         "label":"OpenBookingCustomerAuthentication",	
+         "comment":"Bookings can be made via the Open Booking API using Customer Authentication.",	
+         "discussionUrl":"https://github.com/openactive/open-booking-api/issues/120"	
+      },
+      {
+         "id":"beta:codeType",
+         "type":"Property",
+         "label":"codeType",
+         "comment":"Type of barcode, e.g. 'Code39'",
+         "domainIncludes":[
+            "schema:Barcode"
+         ],
+         "rangeIncludes":[
+            "schema:Text"
+         ],
+         "discussionUrl":"https://github.com/openactive/open-booking-api/issues/130"
       }
    ]
 }
