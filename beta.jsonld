@@ -383,6 +383,96 @@
          ],
          "discussionUrl":"https://github.com/openactive/open-booking-api/issues/120"
       },
+      {
+          "id":"beta:virtualLocation",
+          "type":"Property",
+          "label":"Virtual Location",
+          "comment":"Describes a means of electronic access to a shared virtual space.",
+          "domainIncludes":[
+            "oa:SessionSeries",
+            "oa:ScheduledSession",
+            "oa:EventSeries",
+            "oa:Event",
+            "oa:HeadlineEvent",
+            "oa:CourseInstance"
+          ],
+          "rangeIncludes":[
+                  "schema:VirtualLocation"
+           ],
+               "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/224"
+            },
+            {
+               "id":"beta:eventAttendanceMode",
+               "type":"Property",
+               "label":"Event Attendance Mode",
+               "comment":"Controlled Value indicating whether an Event may be attended physically, online, or both.",
+               "domainIncludes":[
+                 "oa:SessionSeries",
+                 "oa:ScheduledSession",
+                 "oa:EventSeries",
+                 "oa:Event",
+                 "oa:HeadlineEvent",
+                 "oa:CourseInstance"               ],
+               "rangeIncludes":[
+                  "beta:EventAttendanceMode"
+               ],
+               "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/225"
+            },
+            {
+               "id":"beta:maximumVirtualAttendeeCapacity",
+               "type":"Property",
+               "label":"Maximum Virtual Attendee Capacity",
+               "comment":"Indicates the maximum number of connections to a shared virtual space",
+               "domainIncludes":[
+                 "oa:SessionSeries",
+                 "oa:ScheduledSession",
+                 "oa:EventSeries",
+                 "oa:Event",
+                 "oa:HeadlineEvent",
+                 "oa:CourseInstance"               ],
+               "rangeIncludes":[
+                  "schema:Integer"
+               ],
+               "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/226"
+            },
+            {
+               "id":"beta:remainingVirtualAttendeeCapacity",
+               "type":"Property",
+               "label":"Remaining Virtual Attendee Capacity",
+               "comment":"Indicates the number of connections to a shared virtual space still available.",
+               "domainIncludes":[
+                 "oa:SessionSeries",
+                 "oa:ScheduledSession",
+                 "oa:EventSeries",
+                 "oa:Event",
+                 "oa:HeadlineEvent",
+                 "oa:CourseInstance"               ],
+               "rangeIncludes":[
+                  "schema:Integer"
+               ],
+               "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/226"
+            },
+            {
+               "id":"https://openactive.io/ns-beta/OfflineEventAttendanceMode",
+               "type":"beta:EventAttendanceMode",
+               "label":"Offline Event",
+               "comment":"Indicates that the event is available only offline (i.e., physically)",
+               "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/225"
+            },
+            {
+               "id":"https://openactive.io/ns-beta/OnlineEventAttendanceMode",
+               "type":"beta:EventAttendanceMode",
+               "label":"Online Event",
+               "comment":"Indicats that the event is available only online.",
+               "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/225"
+            },
+            {
+               "id":"https://openactive.io/ns-beta/MixedEventAttendanceMode",
+               "type":"beta:EventAttendanceMode",
+               "label":"Online and Offline Event",
+               "comment":"Indicates that the event is available both on- and offline.",
+               "discussionUrl":"https://github.com/openactive/modelling-opportunity-data/issues/225"
+            },
       {	
          "id":"https://openactive.io/ns-beta#OpenBookingCustomerAuthentication",	
          "type":"oa:AvailableChannelType",
