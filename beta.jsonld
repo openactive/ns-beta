@@ -430,19 +430,6 @@
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/227"
     },
     {
-      "id": "beta:maximumVirtualAttendeeCapacity",
-      "type": "Property",
-      "label": "maximumVirtualAttendeeCapacity",
-      "comment": "Indicates the maximum number of connections to a shared virtual space",
-      "domainIncludes": [
-        "pending:VirtualLocation"
-      ],
-      "rangeIncludes": [
-        "schema:Integer"
-      ],
-      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/226"
-    },
-    {
       "id": "beta:isInteractivityPreferred",
       "type": "Property",
       "label": "isInteractivityPreferred",
