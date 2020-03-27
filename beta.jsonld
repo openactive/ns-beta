@@ -409,7 +409,7 @@
       "label": "virtualLocation",
       "comment": "Describes a means of electronic access to a shared virtual space.",
       "domainIncludes": [
-        "oa:Event"
+        "schema:Event"
       ],
       "rangeIncludes": [
         "pending:VirtualLocation"
@@ -422,7 +422,7 @@
       "label": "affiliatedLocation",
       "comment": "The original location of the event before it was moved online.",
       "domainIncludes": [
-        "oa:Event"
+        "schema:Event"
       ],
       "rangeIncludes": [
         "schema:Place"
