@@ -412,7 +412,7 @@
         "oa:Event"
       ],
       "rangeIncludes": [
-        "schema:VirtualLocation"
+        "pending:VirtualLocation"
       ],
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/224"
     },
@@ -435,7 +435,7 @@
       "label": "maximumVirtualAttendeeCapacity",
       "comment": "Indicates the maximum number of connections to a shared virtual space",
       "domainIncludes": [
-        "schema:VirtualLocation"
+        "pending:VirtualLocation"
       ],
       "rangeIncludes": [
         "schema:Integer"
