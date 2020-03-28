@@ -37,19 +37,6 @@
       "discussionUrl": "https://github.com/openactive/ns-beta/issues/3"
     },
     {
-      "id": "beta:availability",
-      "type": "Property",
-      "label": "availability",
-      "comment": "For data publishers not wishing to disclose the granular availability of their sessions openly.",
-      "domainIncludes": [
-        "schema:Event"
-      ],
-      "rangeIncludes": [
-        "schema:Text"
-      ],
-      "discussionUrl": "https://github.com/openactive/ns-beta/issues/9"
-    },
-    {
       "id": "beta:attendeeCount",
       "type": "Property",
       "label": "attendeeCount",
