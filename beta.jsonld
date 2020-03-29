@@ -407,7 +407,7 @@
       "@id": "beta:affiliatedLocation",
       "@type": "Property",
       "label": "affiliatedLocation",
-      "comment": "The original location of the event before it was moved online.",
+      "comment": "The physical location affiliated with the virtual event, for example the original location of the event before it was moved online.",
       "domainIncludes": [
         "schema:Event"
       ],
