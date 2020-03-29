@@ -5,7 +5,7 @@ set -e # exit with nonzero exit code if anything fails
 git config --global push.default matching
 
 # prepare extension-documentation-generator build
-npm install
+npm install git+https://github.com/openactive/extension-documentation-generator.git
 
 # clear and re-create the out directory
 rm -rf out || exit 0;
