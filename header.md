@@ -17,16 +17,16 @@ Note that properties listed here _must_ have associated proposals in one of the 
     "https://openactive.io/",
     "https://openactive.io/ns-beta"
   ],
-  "type": "SessionSeries",
+  "@type": "SessionSeries",
   "name": "Tai chi Class",
   "description": "You need to be strong to attend.",
   "beta:formattedDescription": "You need to be <b>strong</b> to attend.",
   "url": "http://www.example.org/events/1",
   "location": {
-    "type": "Place",
+    "@type": "Place",
     "name": "ExampleCo Gym Kingswood",
     "address": {
-      "type": "PostalAddress",
+      "@type": "PostalAddress",
       "streetAddress": "1 High Street",
       "addressLocality": "Kingswood",
       "addressRegion": "South Gloucestershire",
