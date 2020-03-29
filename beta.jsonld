@@ -420,7 +420,7 @@
       "@id": "beta:isInteractivityPreferred",
       "@type": "Property",
       "label": "isInteractivityPreferred",
-      "comment": "A property that indicates whether the virtual event is interactive (e.g. Zoom with participant microphones and cameras on), or is just a one-way broadcast (e.g. Facebook Live, Instagram Live, Zoom with participant microphones and cameras off).",
+      "comment": "Indicates whether the virtual event is interactive (e.g. Zoom with participant microphones and cameras on), or is just a one-way broadcast (e.g. Facebook Live, Instagram Live, Zoom with participant microphones and cameras off).",
       "domainIncludes": [
         "schema:Event"
       ],
@@ -433,7 +433,7 @@
       "@id": "beta:participantSuppliedEquipment",
       "@type": "Property",
       "label": "participantSuppliedEquipment",
-      "comment": "A property that indicates whether the participant must or may supply equipment for use in the Event.",
+      "comment": "Indicates whether the participant must or may supply equipment for use in the Event.",
       "domainIncludes": [
         "schema:Event"
       ],
@@ -441,6 +441,19 @@
         "oa:RequiredStatusType"
       ],
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/229"
+    },
+    {
+      "@id": "beta:donationPaymentUrl",
+      "@type": "Property",
+      "label": "donationPaymentUrl",
+      "comment": "The URL of the webpage where the activity provider accepts donations.",
+      "domainIncludes": [
+        "schema:Event"
+      ],
+      "rangeIncludes": [
+        "schema:URL"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/234"
     },
     {
       "@id": "beta:isFirstSessionAccessibleForFree",
