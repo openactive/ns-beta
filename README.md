@@ -5,7 +5,7 @@ Please find documentation relating to this namespace at https://openactive.io/ns
 
 ## Contribution
 
-Please create a pull request amending the file `beta.jsonld` with the relevant terms. Documentation is automatically generated from this file when the PR is merged with the `master` branch.
+Please create a pull request amending the file `beta.jsonld` with the relevant terms. Documentation is automatically generated from this file when the PR is merged into the `master` branch.
 
 Note that all beta terms **MUST** reference a GitHub issue on the repository of the specification to which they relate.
 
