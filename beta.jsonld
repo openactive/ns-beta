@@ -16,7 +16,8 @@
         "schema:Place",
         "schema:Organization",
         "schema:Person",
-        "oa:FacilityUse"
+        "oa:FacilityUse",
+        "schema:Brand"
       ],
       "rangeIncludes": [
         "schema:Text"
