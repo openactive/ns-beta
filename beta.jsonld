@@ -461,9 +461,10 @@
       "@id": "beta:formalCriteriaMet",
       "@type": "Property",
       "label": "formalCriteriaMet",
-      "comment": "An array of URLs, each of which describe the formal criteria that are met by the opportunity.",
+      "comment": "An array of URLs, each of which describe the formal criteria that are met by the organizer.",
       "domainIncludes": [
-        "schema:Event"
+        "schema:Organization",
+        "schema:Person"
       ],
       "rangeIncludes": [
         "schema:URL"
