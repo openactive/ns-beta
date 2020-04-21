@@ -152,7 +152,7 @@
       "@id": "beta:video",
       "@type": "Property",
       "label": "video",
-      "comment": "An related video object.",
+      "comment": "A related video object.",
       "domainIncludes": [
         "schema:Event",
         "oa:FacilityUse",
