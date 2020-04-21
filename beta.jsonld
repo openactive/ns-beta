@@ -276,6 +276,7 @@
       "subClassOf": [
         "schema:Offer"
       ],
+      "@container": "@list",
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/207"
     },
     {
@@ -455,6 +456,20 @@
         "schema:URL"
       ],
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/234"
+    },
+    {
+      "@id": "beta:formalCriteriaMet",
+      "@type": "Property",
+      "label": "formalCriteriaMet",
+      "comment": "An array of URLs, each of which describe the formal criteria that are met by the opportunity.",
+      "domainIncludes": [
+        "schema:Event"
+      ],
+      "rangeIncludes": [
+        "schema:URL"
+      ],
+      "@container": "@list",
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/236"
     },
     {
       "@id": "beta:isFirstSessionAccessibleForFree",
