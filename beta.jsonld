@@ -213,7 +213,7 @@
     {
       "@id": "beta:facilitySetting",
       "@type": "Property",
-      "label": "facilityType",
+      "label": "facilitySetting",
       "comment": "Whether the event or facility is indoor or outdoor.",
       "domainIncludes": [
         "schema:Event",
