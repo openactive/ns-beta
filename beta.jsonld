@@ -484,6 +484,19 @@
         "schema:Boolean"
       ],
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/232"
-    }
+    },
+    {
+      "@id": "beta:contactPoint",
+      "@type": "Property",
+      "label": "contactPoint",
+      "comment": "Contact details for an Event, where they are not specifically related to the `organizer` or `leader`.",
+      "domainIncludes": [
+        "schema:Event"
+      ],
+      "rangeIncludes": [
+        "schema:ContactPoint"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/113"
+    },
   ]
 }
