@@ -10,7 +10,7 @@
       "@id": "beta:formattedDescription",
       "@type": "Property",
       "label": "formattedDescription",
-      "comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers.",
+      "comment": "Sometimes a description is stored with formatting (e.g. href, bold, italics, embedded YouTube videos). This formatting can be useful for data consumers. This property must contain HTML.",
       "domainIncludes": [
         "schema:Event",
         "schema:Place",
