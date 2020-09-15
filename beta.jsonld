@@ -507,7 +507,7 @@
         "schema:Offer"
       ],
       "rangeIncludes": [
-        "schema:Integer"
+        "schema:QuantitativeValue"
       ],
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/250"
     }
