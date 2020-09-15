@@ -497,6 +497,19 @@
         "schema:ContactPoint"
       ],
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/113"
+    },
+    {
+      "@id": "beta:partySize",
+      "@type": "Property",
+      "label": "partySize",
+      "comment": "Number of people the reservation should accommodate.",
+      "domainIncludes": [
+        "schema:Offer"
+      ],
+      "rangeIncludes": [
+        "schema:Integer"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/250"
     }
   ]
 }
