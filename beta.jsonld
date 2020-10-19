@@ -93,7 +93,7 @@
       "@id": "https://openactive.io/ns-beta#Member",
       "@type": "schema:BusinessEntityType",
       "label": "Member",
-      "comment": "Indicates that a customer (eligableCustomerType) is a member of the business.",
+      "comment": "When used as a value of `eligableCustomerType` within an `Offer`, indicates that the `Offer` is only available to members of the organizer / provider.",
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/80"
     },
     {
