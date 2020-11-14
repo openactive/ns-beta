@@ -24,7 +24,7 @@ jobs:
           force_orphan: true
           enable_jekyll: true
 
-      - name: Emit repository_dispatch
+      - name: Trigger tooling update
         uses: mvasigh/dispatch-action@1.1.6
         with:
           token: ${{ secrets.PUBLIC_REPO_ACCESS_TOKEN }}
