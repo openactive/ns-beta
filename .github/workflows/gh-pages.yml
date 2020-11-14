@@ -23,3 +23,11 @@ jobs:
           publish_dir: ./out
           force_orphan: true
           enable_jekyll: true
+
+      - name: Emit repository_dispatch
+        uses: mvasigh/dispatch-action@1.1.6
+        with:
+          token: ${{ secrets.PUBLIC_REPO_ACCESS_TOKEN }}
+          repo: OpenActive.NET
+          owner: openactive
+          event_type: data-models-update
