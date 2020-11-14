@@ -25,9 +25,8 @@ jobs:
           enable_jekyll: true
 
       - name: Trigger tooling update
-        uses: mvasigh/dispatch-action@1.1.6
+        uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PUBLIC_REPO_ACCESS_TOKEN }}
-          repo: OpenActive.NET
-          owner: openactive
-          event_type: data-models-update
+          repository: openactive/OpenActive.NET
+          event-type: data-models-update
