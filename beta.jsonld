@@ -138,7 +138,8 @@
       "@id": "beta:timeZone",
       "@type": "Property",
       "label": "timeZone",
-      "comment": "[DEPRECATED: This beta property is now deprecated, please use `schema:scheduleTimezone` instead.] The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
+      "comment": "The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
+      "supersededBy": "schema:scheduleTimezone",
       "domainIncludes": [
         "pending:Schedule",
         "oa:PartialSchedule"
