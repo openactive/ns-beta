@@ -24,9 +24,16 @@ jobs:
           force_orphan: true
           enable_jekyll: true
 
+  dispatch:
+    needs: deploy
+    strategy:
+      matrix:
+        repo: ['OpenActive.NET', 'models-php', 'models-ruby', 'developer-documentation']
+    runs-on: ubuntu-latest
+    steps:
       - name: Trigger tooling update
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PUBLIC_REPO_ACCESS_TOKEN }}
-          repository: openactive/OpenActive.NET
+          repository: openactive/${{ matrix.repo }}
           event-type: data-models-update
