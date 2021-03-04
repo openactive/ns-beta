@@ -201,7 +201,7 @@
       "@id": "beta:facilityType",
       "@type": "Property",
       "label": "facilityType",
-      "comment": "The type of facility in use.",
+      "comment": "The type of facility in use. See https://www.openactive.io/facility-types/.",
       "domainIncludes": [
         "oa:FacilityUse"
       ],
