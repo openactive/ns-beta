@@ -524,7 +524,8 @@
       "rangeIncludes": [
         "beta:BookingChannelType"
       ],
-      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/161",
+      "@container": "@list"
     },
     {
       "@id": "beta:BookingChannelType",
