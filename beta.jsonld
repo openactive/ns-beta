@@ -511,6 +511,57 @@
         "schema:QuantitativeValue"
       ],
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/250"
+    } {
+      "@id": "beta:bookingChannel",
+      "@type": "Property",
+      "label": "bookingChannel",
+      "comment": "The channels through which a booking can be made.",
+      "domainIncludes": [
+        "schema:Event",
+        "oa:FacilityUse"
+      ],
+      "rangeIncludes": [
+        "beta:BookingChannelType"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "@id": "beta:BookingChannelType",
+      "@type": "Class",
+      "label": "BookingChannelType",
+      "comment": "An enumeration of booking channels that can exist.",
+      "subClassOf": [
+        "schema:Enumeration"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "@id": "https://openactive.io/ns-beta#TelephoneAdvanceBooking",
+      "@type": "beta:BookingChannelType",
+      "label": "TelephoneAdvanceBooking",
+      "comment": "Telephone booking in advance of the opportunity, without payment",
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "@id": "https://openactive.io/ns-beta#TelephonePrepayment",
+      "@type": "beta:BookingChannelType",
+      "label": "TelephonePrepayment",
+      "comment": "Telephone booking in advance of the opportunity, with payment",
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "@id": "https://openactive.io/ns-beta#OnlineAdvanceBooking",
+      "@type": "beta:BookingChannelType",
+      "label": "OnlineAdvanceBooking",
+      "comment": "Online booking in advance of the opportunity, without payment",
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "@id": "https://openactive.io/ns-beta#OnlinePrepayment",
+      "@type": "beta:BookingChannelType",
+      "label": "OnlinePrepayment",
+      "comment": "Online booking in advance of the opportunity, with payment",
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/161"
     }
   ]
 }
