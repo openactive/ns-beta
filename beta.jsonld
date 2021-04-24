@@ -22,7 +22,7 @@
       "rangeIncludes": [
         "schema:Text"
       ],
-      "discussionUrl": "https://github.com/openactive/ns-beta/issues/2"
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/276"
     },
     {
       "@id": "beta:distance",
@@ -35,7 +35,7 @@
       "rangeIncludes": [
         "schema:QuantitativeValue"
       ],
-      "discussionUrl": "https://github.com/openactive/ns-beta/issues/3"
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/275"
     },
     {
       "@id": "beta:attendeeCount",
@@ -48,7 +48,7 @@
       "rangeIncludes": [
         "schema:Integer"
       ],
-      "discussionUrl": "https://github.com/openactive/ns-beta/issues/12"
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/274"
     },
     {
       "@id": "beta:registrationCount",
@@ -61,7 +61,7 @@
       "rangeIncludes": [
         "schema:Integer"
       ],
-      "discussionUrl": "https://github.com/openactive/ns-beta/issues/13"
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/273"
     },
     {
       "@id": "beta:course",
