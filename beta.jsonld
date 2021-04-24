@@ -511,7 +511,8 @@
         "schema:QuantitativeValue"
       ],
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/250"
-    } {
+    },
+    {
       "@id": "beta:bookingChannel",
       "@type": "Property",
       "label": "bookingChannel",
