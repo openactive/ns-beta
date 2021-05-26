@@ -74,7 +74,8 @@
       "rangeIncludes": [
         "schema:Course"
       ],
-      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/164"
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/164",
+      "supersededBy": "oa:instanceOfCourse"
     },
     {
       "@id": "beta:logo",
