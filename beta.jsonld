@@ -78,19 +78,6 @@
       "supersededBy": "oa:instanceOfCourse"
     },
     {
-      "@id": "beta:logo",
-      "@type": "Property",
-      "label": "logo",
-      "comment": "An associated logo for a course.",
-      "domainIncludes": [
-        "schema:Course"
-      ],
-      "rangeIncludes": [
-        "schema:ImageObject"
-      ],
-      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/164"
-    },
-    {
       "@id": "https://openactive.io/ns-beta#Member",
       "@type": "schema:BusinessEntityType",
       "label": "Member",
