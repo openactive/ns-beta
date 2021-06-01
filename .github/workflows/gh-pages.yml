@@ -28,7 +28,7 @@ jobs:
     needs: deploy
     strategy:
       matrix:
-        repo: ['OpenActive.NET', 'models-php', 'models-ruby', 'developer-documentation']
+        repo: ['OpenActive.NET', 'models-php', 'models-ruby', 'models-ts', 'developer-documentation']
     runs-on: ubuntu-latest
     steps:
       - name: Trigger tooling update
