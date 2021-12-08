@@ -198,7 +198,8 @@
         "skos:Concept"
       ],
       "@container": "@list",
-      "discussionUrl": "https://github.com/openactive/facility-types/issues/1"
+      "discussionUrl": "https://github.com/openactive/facility-types/issues/1",
+      "supersededBy": "oa:facilityType"
     },
     {
       "@id": "beta:facilitySetting",
