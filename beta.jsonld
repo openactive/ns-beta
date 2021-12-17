@@ -554,6 +554,54 @@
       "label": "OnlinePrepayment",
       "comment": "Online booking in advance of the opportunity, with payment",
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "@id": "beta:availableQuantity",
+      "@type": "Property",
+      "label": "availableQuantity",
+      "domainIncludes": [
+        "beta:AddOn"
+      ],
+      "rangeIncludes": [
+        "schema:QuantitiveValue"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/297"
+    },
+    {
+      "@id": "beta:AddOn",
+      "@type": "Class",
+      "label": "AddOn",
+      "subClassOf": [
+        "schema:Product"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/297"
+    },
+    {
+      "@id": "beta:addOn",
+      "@type": "Property",
+      "@container": "@list",
+      "label": "addOn",
+      "domainIncludes": [
+        "oa:FacilityUse",
+        "oa:IndividualFacilityUse"
+      ],
+      "rangeIncludes": [
+        "beta:AddOn"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/297"
+    },
+    {
+      "@id": "beta:parentOrderItem",
+      "@type": "Property",
+      "label": "parentOrderItem",
+      "comment": "The parent order item for an order item, e.g. when using addons",
+      "domainIncludes": [
+        "schema:OrderItem"
+      ],
+      "rangeIncludes": [
+        "schema:OrderItem"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/297"
     }
   ]
 }
