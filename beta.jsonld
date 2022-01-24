@@ -187,6 +187,20 @@
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/204"
     },
     {
+      "@id": "beta:placeType",
+      "@type": "Property",
+      "label": "placeType",
+      "comment": "The type of Place. See https://openactive.io/place-types/.",
+      "domainIncludes": [
+        "schema:Place"
+      ],
+      "rangeIncludes": [
+        "skos:Concept"
+      ],
+      "@container": "@list",
+      "discussionUrl": "https://github.com/openactive/place-types/issues/1"
+    },
+    {
       "@id": "beta:facilityType",
       "@type": "Property",
       "label": "facilityType",
