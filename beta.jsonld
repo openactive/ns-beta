@@ -491,6 +491,19 @@
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/232"
     },
     {
+      "@id": "beta:isScheduledAsSlots",
+      "@type": "Property",
+      "label": "isScheduledAsSlots",
+      "comment": "A property that indicates whether the event contains a high frequency of occurrences. Intended as a UI hint for interfaces that represent these occurrences.",
+      "domainIncludes": [
+        "schema:Event"
+      ],
+      "rangeIncludes": [
+        "schema:Boolean"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/301"
+    },
+    {
       "@id": "beta:contactPoint",
       "@type": "Property",
       "label": "contactPoint",
