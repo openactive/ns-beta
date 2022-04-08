@@ -148,7 +148,8 @@
         "oa:FacilityUse",
         "schema:Brand",
         "schema:Organization",
-        "schema:Course"
+        "schema:Course",
+        "schema:Place"
       ],
       "rangeIncludes": [
         "schema:VideoObject"
