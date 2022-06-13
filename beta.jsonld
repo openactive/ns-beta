@@ -217,6 +217,20 @@
       "supersededBy": "oa:facilityType"
     },
     {
+      "@id": "beta:facilityAttribute",
+      "@type": "Property",
+      "label": "facilityAttribute",
+      "comment": "Attributes associated with the facility in use. See https://openactive.io/facility-attribute-list/.",
+      "domainIncludes": [
+        "oa:FacilityUse"
+      ],
+      "rangeIncludes": [
+        "skos:Concept"
+      ],
+      "@container": "@list",
+      "discussionUrl": "https://github.com/openactive/facility-types/issues/1"
+    },
+    {
       "@id": "beta:facilitySetting",
       "@type": "Property",
       "label": "facilitySetting",
