@@ -158,6 +158,20 @@
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/88"
     },
     {
+      "@id": "beta:virtualTour",
+      "@type": "Property",
+      "label": "virtualTour",
+      "comment": "A related virtual tour.",
+      "domainIncludes": [
+        "schema:Place"
+      ],
+      "rangeIncludes": [
+        "schema:3DModel"
+      ],
+      "@container": "@list",
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/306"
+    },
+    {
       "@id": "beta:sportsActivityLocation",
       "@type": "Property",
       "label": "sportsActivityLocation",
