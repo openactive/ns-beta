@@ -172,6 +172,19 @@
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/306"
     },
     {
+      "@id": "beta:serviceOperator",
+      "@type": "Property",
+      "label": "serviceOperator",
+      "comment": "The organization responsible for the operation of the `Place`.",
+      "domainIncludes": [
+        "schema:Place"
+      ],
+      "rangeIncludes": [
+        "schema:Organization"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/307"
+    },
+    {
       "@id": "beta:sportsActivityLocation",
       "@type": "Property",
       "label": "sportsActivityLocation",
