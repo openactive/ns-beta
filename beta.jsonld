@@ -166,7 +166,7 @@
         "schema:Place"
       ],
       "rangeIncludes": [
-        "schema:3DModel"
+        "pending:3DModel"
       ],
       "@container": "@list",
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/306"
