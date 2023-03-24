@@ -158,20 +158,6 @@
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/88"
     },
     {
-      "@id": "beta:virtualTour",
-      "@type": "Property",
-      "label": "virtualTour",
-      "comment": "A related virtual tour.",
-      "domainIncludes": [
-        "schema:Place"
-      ],
-      "rangeIncludes": [
-        "pending:3DModel"
-      ],
-      "@container": "@list",
-      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/306"
-    },
-    {
       "@id": "beta:serviceOperator",
       "@type": "Property",
       "label": "serviceOperator",
