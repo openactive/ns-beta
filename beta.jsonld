@@ -130,7 +130,7 @@
       "comment": "The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
       "supersededBy": "schema:scheduleTimezone",
       "domainIncludes": [
-        "pending:Schedule",
+        "schema:Schedule",
         "oa:PartialSchedule"
       ],
       "rangeIncludes": [
@@ -166,7 +166,7 @@
         "schema:Place"
       ],
       "rangeIncludes": [
-        "pending:3DModel"
+        "schema:3DModel"
       ],
       "@container": "@list",
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/306"
@@ -448,7 +448,7 @@
         "schema:Event"
       ],
       "rangeIncludes": [
-        "pending:VirtualLocation"
+        "schema:VirtualLocation"
       ],
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/224"
     },
