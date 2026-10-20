@@ -27,18 +27,22 @@ jobs:
   dispatch:
     needs: deploy
     strategy:
+      fail-fast: false
       matrix:
         repo: ['OpenActive.NET', 'models-php', 'models-ruby', 'models-ts', 'developer-documentation']
     runs-on: ubuntu-latest
     steps:
+      # Without owner and repositories, the token only covers this repository and cannot dispatch to others
       - name: Generate GitHub App Token
         uses: actions/create-github-app-token@v1
         id: generate-token
         with:
           app-id: ${{ secrets.GH_APP_ID }}
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          owner: openactive
+          repositories: ${{ matrix.repo }}
       - name: Trigger tooling update
-        uses: peter-evans/repository-dispatch@v1
+        uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ steps.generate-token.outputs.token }}
           repository: openactive/${{ matrix.repo }}

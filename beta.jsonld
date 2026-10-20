@@ -130,7 +130,7 @@
       "comment": "The time zone used to generate occurrences, same as iCal TZID. E.g. 'Europe/London'.",
       "supersededBy": "schema:scheduleTimezone",
       "domainIncludes": [
-        "pending:Schedule",
+        "schema:Schedule",
         "oa:PartialSchedule"
       ],
       "rangeIncludes": [
@@ -166,7 +166,7 @@
         "schema:Place"
       ],
       "rangeIncludes": [
-        "pending:3DModel"
+        "schema:3DModel"
       ],
       "@container": "@list",
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/306"
@@ -448,7 +448,7 @@
         "schema:Event"
       ],
       "rangeIncludes": [
-        "pending:VirtualLocation"
+        "schema:VirtualLocation"
       ],
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/224"
     },
@@ -623,6 +623,19 @@
       "label": "OnlinePrepayment",
       "comment": "Online booking in advance of the opportunity, with payment",
       "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/161"
+    },
+    {
+      "@id": "beta:dateVerified",
+      "@type": "Property",
+      "label": "dateVerified",
+      "comment": "The date on which the details of this organization were last verified as correct by the publisher. Unlike `schema:dateModified`, this changes when the details are confirmed, even if nothing in them has changed.",
+      "domainIncludes": [
+        "schema:Organization"
+      ],
+      "rangeIncludes": [
+        "schema:Date"
+      ],
+      "discussionUrl": "https://github.com/openactive/modelling-opportunity-data/issues/313"
     }
   ]
 }
